@@ -1,0 +1,73 @@
+@-moz-document domain("m.kaskus.co.id") {
+/* FLIP THE TV */
+img[title='televisi']{transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -khtml-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);}
+
+/* FOOTER */
+footer#site-footer {padding-bottom: 0px;}
+#site-footer {margin-top:0px;}
+
+/* POST HEADER */
+.author {background-color:#222; color:#fff;}
+.author .permalink {color:#fff;}
+.author a {color:#fff;}
+
+body {background:#999;}
+//.breadcrumbs {border-bottom:1px solid sandybrown!important;border-top:1px solid sandybrown!important;}
+#content-wrapper .header .breadcrumbs a {background:url(http://puu.sh/i3lAA/c81d4614d7.png)center right no-repeat;}
+
+/* WIDTH TOTAL */
+#wrapper, #wrapper.fx .main-h {max-width: 850px!important;}
+#wrapper.fx .main-h {width: 850px!important;}
+
+/* NAV ON MYFORUM */
+#subnav, .in-btn, .tabnav a.current {background-color:#444;}
+.forum-activities .post-list h2 {background-color:#666!important;}
+
+/* HEADER */
+body.forum .main-h, .main-h {background: #000; height: 30px!important;}
+#wrapper.fx #site-header .main-h, #top-features{display:none;}
+//#wrapper.fx #site-header .main-h a img {height: 25px!important; width: 25px!important;}
+.total-share {margin-bottom:-9px;}
+//#subnav {position:fixed; margin-top:0px; z-index:100;}
+
+.main-h a {background: #000; height: 30px;padding: 0px 10px; line-height:30px!important; color:#fff; radius:2px;}
+
+.main-h a.logo {background:#000; height:30px; line-height:30px!important;}
+
+.sxln {display:none;}
+
+.main-h a img{margin:3px 0px 4px 9px!important; line-height:30px;}
+//img.c-avtr {src:"http://s.kaskus.id/user/avatar/2012/03/10/avatar4125324_2.gif";}
+.c-avt img.c-avtr {max-width:30px!important; display:none;}
+.main-h a#kk-forum.current, .main-h a#kk-forum.current:hover, .main-h a#kk-forum:hover, #wrapper.fx #site-header .main-h a{height:30px!important;}
+
+#content-wrapper .header .breadcrumbs a {padding-left: 4px;}
+
+/*
+	POST STYLE
+*/
+#content-wrapper .entry-content {font-size: 14px;}
+
+
+/* mQR style */
+.form-input fieldset .r {margin-bottom: -9px;}
+.mQR .in-txt #reply-messsage {max-width:824px!important;}
+
+/* myforum */
+//#content-wrapper .post-list .list-entry .forum-activities table tr th a{color:red;}
+//#content-wrapper .post-list .list-entry {color:black; font-weight:bolder;}
+#content-wrapper .post-list .list-entry>a {font-weight:700;}
+table.b-table img {max-width:8px;}
+#content-wrapper .post-list .list-entry .sub-meta {text-decoration:none!important;}
+.form-input fieldset .r {margin-bottom: 10px; border-bottom: 1px solid #eee;}
+}
+
+@-moz-document domain("m.kaskus.co.id"), domain("fjb.m.kaskus.co.id") {
+/* ADS */
+.bnr-ads {display:none;}
+}
