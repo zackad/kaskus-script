@@ -1,46 +1,44 @@
-@-moz-document domain("www.kaskus.co.id") {
+@-moz-document domain("www.kaskus.co.id"), domain("fjb.kaskus.co.id") {
 /* background color utama */
 body.fjb,body.inner,body.landing,.listing-wrapper{background:#666}
 body {color:#000;}
 
-/** element gk penting */
-body.forum.inner #main.main .container .row.ads-lb-wrap, #bottom-leaderboard,#feedback,#leader-banner,#thread_post_list .text-center,.kaskus-ads,.related-thread,body.forum .col-sm-3.sidebar,.user-control-stick,#lb-button-group,.sidebar .banner-frame,body.fjb .sidebar .sidebar-wrap>section.similar-item,body.fjb .author.clearfix time{display:none}
-
+  /** element gk penting */
+body.forum.inner #main.main .container .row.ads-lb-wrap, #bottom-leaderboard,#feedback,#leader-banner,#thread_post_list .text-center,.kaskus-ads,.related-thread,body.forum .col-sm-3.sidebar,.user-control-stick,#lb-button-group,.sidebar .banner-frame,body.fjb .sidebar .sidebar-wrap>section.similar-item,body.fjb .author.clearfix time, .sidebar .sidebar-wrap{display:none}
 //.related-thread .button-related .back-to-top .fa {font-size: 16px; opacity: .6;}
 //.related-thread .button-related .back-to-top{border:none}
 
-/* header */
+  /* header */
 //body header.navbar{background:#343A3A;box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.52)}
 body header.navbar{background:#343030;box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.52)}
 #btn-whatsnew, .navbar-default .navbar-nav>li>a, a#help-center {color: #FFF;}
 
-/* forum dan user control */
-body.forum.inner #lb-button-group{position:absolute!important;right:0;top:28px;z-index:1;width:150px}
-body.forum .main-content{margin:0 auto;float:none}
-body.forum .main-content,body.forum .user-control-stick{width:1024px}
-
-/*user comtrol*/
+  /* forum dan user control */
+body.forum.inner #lb-button-group{position:absolute!important;right:0;top:28px;z-index:1;width:150px;}
+body.forum .main-content {margin:0 auto;float:none;}
+body.forum .main-content,body.forum .user-control-stick{width:1024px;}
+.listing-wrapper{margin:auto!important; float:none;}
+  /*user comtrol*/
 .panel-wrapper.menu a.fold, .panel-wrapper.menu.active a.fold {background: #343434; color: #eee;}
 .panel-wrapper.menu a.fold:hover {background: #000; color: #eee;}
 .panel-wrapper.menu a.current {background: #666; color: #fff;}
 .panel-wrapper.menu a:hover {background: #222; color: #fff;}
-.user-content-wrapper .user-tab-nav li.active  a {background: #666;}
+.user-content-wrapper .user-tab-nav li.active a {background: #666;}
 
-/*VM*/
+  /*VM*/
 .visitor-message .deleted {display:none;}
-
 /*
-	style di halaman thread 
+style di halaman thread
 */
-/* lebar postingan */
+
+  /* lebar postingan */
 //body.response #thread_post_list .row.nor-post .postlist .entry-body {width: 902px; float: left; border-left: 1px solid #d4d4d4; min-height: 275px; position: relative; padding: 0px;}
 
-/* warna header post */
+  /* warna header post */
 body.response.forum .postlist .entry-head {background:#242A2A;}
 
-/*user-quickview*/
+  /*user-quickview*/
 .user-quickview {z-index:3;}
-
 /* therad-prevnext */
 /*
 .thread-prevnext {width:1024px;}
@@ -49,19 +47,23 @@ body.response.forum .postlist .entry-head {background:#242A2A;}
 .thread-prevnext a.next-thread > div{width:341px; left:341px;}
 */
 
-/* USER TOOLS */
+  /* USER TOOLS */
 body .postlist .user-tools a{line-height:28px;font-weight:700;font-size:12px;display:inline-block;margin-bottom:0;text-align:center;vertical-align:middle;cursor:pointer;border:1px solid transparent;white-space:nowrap;-moz-user-select:-moz- none;-ms-user-select:none;-webkit-user-select:none;user-select:none;color:#fff;background:#222;border-radius:2px;-moz-transition:all .1s ease-in-out;-webkit-transition:all .1s ease-in-out;transition:all .1s ease-in-out;text-decoration:none}
-
 body .postlist .user-tools a:hover{text-decoration:none;background-color:#aaa!important; color:#000;}
 body .postlist .user-tools a i{border-right:solid 1px #fff;float:left;line-height:28px;margin-left:-10px;margin-right:10px;padding:0 10px}
 body .postlist .user-tools a.btn-orange{background-color:#f6a049!important}
 
-
-/* breadcrumb */
+  /* breadcrumb */
 //#breadcrumbs-wrap {background: #FFAAAA;}
 .quick-navigation {margin-left:72px; width:1024px; text-transform:none;}
 
-/* QR Style */
+  /* QR Style */
 body .reply-form .entry-head {background: #333;}
 .xkqr .reply-thread {padding-top: 0;padding-bottom: 2px;}
+  .content-wrap {
+    width: 1000px;
+    float: right;
+    background: #ededed;
+    padding-top: 15px;
+}
 }
