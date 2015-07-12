@@ -2,6 +2,7 @@
 /* background color utama */
 body.fjb,body.inner,body.landing,.listing-wrapper{background:#666}
 body {color:#000;}
+.reputation {width:110px;}
 
   /** element gk penting */
 body.forum.inner #main.main .container .row.ads-lb-wrap, #bottom-leaderboard,#feedback,#leader-banner,#thread_post_list .text-center,.kaskus-ads,.related-thread,body.forum .col-sm-3.sidebar,.user-control-stick,#lb-button-group,.sidebar .banner-frame,body.fjb .sidebar .sidebar-wrap>section.similar-item,body.fjb .author.clearfix time, .sidebar .sidebar-wrap{display:none}
