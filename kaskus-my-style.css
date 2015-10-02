@@ -6,7 +6,7 @@ body {color:#000;}
 .listing-wrapper{padding-top: 5px; background: #eee;}
   
   /** element gk penting */
-body.forum.inner #main.main .container .row.ads-lb-wrap, #bottom-leaderboard,#feedback,#leader-banner,#thread_post_list .text-center,.kaskus-ads,.related-thread,body.forum .col-sm-3.sidebar,.user-control-stick,#lb-button-group,.sidebar .banner-frame,body.fjb .sidebar .sidebar-wrap>section.similar-item,body.fjb .author.clearfix time, .sidebar .sidebar-wrap, footer{display:none}
+body.forum.inner #main.main .container .row.ads-lb-wrap, #bottom-leaderboard,#feedback,#leader-banner,#thread_post_list .text-center,.kaskus-ads,.related-thread,body.forum .col-sm-3.sidebar,.user-control-stick,#lb-button-group,.sidebar .banner-frame,body.fjb .sidebar .sidebar-wrap>section.similar-item,body.fjb .author.clearfix time, .sidebar .sidebar-wrap, .site-footer{display:none}
 //.related-thread .button-related .back-to-top .fa {font-size: 16px; opacity: .6;}
 //.related-thread .button-related .back-to-top{border:none}
 
