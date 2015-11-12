@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Kaskus TS Tagger
 // @namespace       zackad's script
-// @version         0.5
+// @version         0.6
 // @description     Give TS kaskus a Tag
 // @grant           GM_addStyle
 // @include         http://m.kaskus.co.id/*
@@ -12,6 +12,8 @@
 // ==/UserScript==
 /*
 CHANGELOG
+v0.6
+- put into css instead of inline text
 v0.5
 - [bug] image not load
 v0.4
@@ -28,16 +30,30 @@ $(document).ready(function(){
     //style edit sesuai selera
     var globalStyle = ''
         +'<style type="text/css">'
-        +'.thread-starter {background-color:black; color:white!important;}'
+        +'.thread-starter {background-color:black; color:white!important; border: sandybrown !important;}'
         +'.thread-starter .fn, .thread-starter .permalink {color:white!important}'
         +'.thread-starter-desk {border:1px solid sandybrown!important;}'
         +'.thread-starter-desk .entry-head {background-color:darkorange!important;}'
         +'.thread-starter-desk .entry-body {border-left:1px solid sandybrown!important;}'
         +'.thread-starter-desk .entry-footer {border-top:1px solid sandybrown;}'
+		+'.ts:after{content: "[TS]"}'
         +'</style>'
         ;
     //silahkan edit sesuka ente
-    var mTS = '<span style="color:darkorange; font-weight:bold;"><b>[TS]</b></span>';
+    var mTS = '<span style="color:darkorange; font-weight:bold;" class="ts"></span>';
+	/*
+		badge = '<span class="icon-badge plus "></span>'
+		$('.user-name .nickname').after(badge);
+		
+		.icon-badge {
+			vertical-align: middle;
+			margin-left: 5px;
+			display: inline-block;
+			width: 15px;
+			height: 18px;
+			background-image: url(../images/layout/comp-sprites.png);
+		}
+	*/
     var dTS = '<span><b style="color:#F5981D;">Thread</b><b style="color:#1998ed;"> Starter</b></span>';
     var juragan = '<span><b style="color:#1998ed;">Juragan</b></span>';
     
