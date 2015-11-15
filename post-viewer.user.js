@@ -1,17 +1,20 @@
 // ==UserScript==
 // @name			Kaskus User Post Viewer
 // @namespace		zackad's script
-// @version			0.6
+// @version			0.7
 // @description		Read Full Post from Kaskus Profile
 // @grant			GM_addStyle
 // @include			http://www.kaskus.co.id/profile/viewallposts/*
 // @include			http://www.kaskus.co.id/viewallposts/*
 // @include			http://www.kaskus.co.id/myforum/mypost
+// @include			http://www.kaskus.co.id/myforum/myquotedpost
 // @require			http://code.jquery.com/jquery-1.10.1.min.js
 // @copyright		2015, zackad
 // ==/UserScript==
 /*
 	CHANGELOG
+		v0.6
+		- add myquotedpost page
 		v0.6
 		- add mypost page
 		v0.5
