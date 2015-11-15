@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Kaskus User Post Viewer
 // @namespace       zackad's script
-// @version         0.4
+// @version         0.5
 // @description     Read Full Post from Kaskus Profile
 // @grant           GM_addStyle
 // @include         http://www.kaskus.co.id/profile/viewallposts/*
@@ -11,6 +11,8 @@
 // ==/UserScript==
 /*
 	CHANGELOG
+		v0.5
+		- autload image
 		v0.4
 		- debug mode
 		v0.3
@@ -23,6 +25,7 @@ $(document).ready(function(){
 	var style = ''
 		+ '<style type="text/css">'
 		+ '.batas {margin-top: 0px !important; margin-bottom: 0px !important;}'
+		+ 'img {max-width: 100% !important; height: auto !important;}'
 		+ '</style>'
 		;
 	$('head').append(style);
@@ -46,8 +49,13 @@ $(document).ready(function(){
 				currentItem.append('<hr class="batas">');
 				var hasil = $(response).find('.entry').html();
 				currentItem.append(hasil);
+				unloadImage = $('img[src="http://s.kaskus.id/banner/1x1.gif"]');
+				unloadImage.each(function(){
+					var source = $(this).attr('data-src');
+					$(this).attr('src', source);
+				});
 			}); 
-	})
+	});
 	
 	function clog(x){
 		if(__DEBUG__ == 0) return;
