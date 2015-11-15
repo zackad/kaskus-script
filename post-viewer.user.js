@@ -1,16 +1,19 @@
 // ==UserScript==
-// @name            Kaskus User Post Viewer
-// @namespace       zackad's script
-// @version         0.5
-// @description     Read Full Post from Kaskus Profile
-// @grant           GM_addStyle
-// @include         http://www.kaskus.co.id/profile/viewallposts/*
+// @name			Kaskus User Post Viewer
+// @namespace		zackad's script
+// @version			0.6
+// @description		Read Full Post from Kaskus Profile
+// @grant			GM_addStyle
+// @include			http://www.kaskus.co.id/profile/viewallposts/*
 // @include			http://www.kaskus.co.id/viewallposts/*
-// @require         http://code.jquery.com/jquery-1.10.1.min.js
-// @copyright       2015, zackad
+// @include			http://www.kaskus.co.id/myforum/mypost
+// @require			http://code.jquery.com/jquery-1.10.1.min.js
+// @copyright		2015, zackad
 // ==/UserScript==
 /*
 	CHANGELOG
+		v0.6
+		- add mypost page
 		v0.5
 		- autload image
 		v0.4
