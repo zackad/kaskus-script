@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Kaskus User Post Viewer
 // @namespace       zackad's script
-// @version         0.3
+// @version         0.4
 // @description     Read Full Post from Kaskus Profile
 // @grant           GM_addStyle
 // @include         http://www.kaskus.co.id/profile/viewallposts/*
@@ -11,12 +11,15 @@
 // ==/UserScript==
 /*
 	CHANGELOG
+		v0.4
+		- debug mode
 		v0.3
 		- all post from thread
 		V0.2
 		- tested with scratchpad
 */
 $(document).ready(function(){
+	var __DEBUG__ = 0;
 	var style = ''
 		+ '<style type="text/css">'
 		+ '.batas {margin-top: 0px !important; margin-bottom: 0px !important;}'
@@ -47,6 +50,7 @@ $(document).ready(function(){
 	})
 	
 	function clog(x){
+		if(__DEBUG__ == 0) return;
 		console.log(x);
 	}
 });
