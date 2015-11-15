@@ -12,6 +12,8 @@
 // ==/UserScript==
 /*
 CHANGELOG
+v0.6
+- put into css instead of inline text
 v0.5
 - [bug] image not load
 v0.4
@@ -28,22 +30,31 @@ $(document).ready(function(){
     //style edit sesuai selera
     var globalStyle = ''
         +'<style type="text/css">'
-        +'.thread-starter {background-color:black; color:white!important; border:1px solid orange!important;}'
+        +'.thread-starter {background-color:black; color:white!important; border: sandybrown !important;}'
         +'.thread-starter .fn, .thread-starter .permalink {color:white!important}'
         +'.thread-starter-desk {border:1px solid sandybrown!important;}'
         +'.thread-starter-desk .entry-head {background-color:darkorange!important;}'
         +'.thread-starter-desk .entry-body {border-left:1px solid sandybrown!important;}'
         +'.thread-starter-desk .entry-footer {border-top:1px solid sandybrown;}'
-        +'.thread-starter-first {border:1px solid sandybrown!important;}'
-        +'.thread-starter-first .entry-head {background-color:darkorange!important;}'
-        +'.thread-starter-first .entry-body {border-left:1px solid sandybrown!important;}'
-        +'.thread-starter-first .entry-footer {border-top:1px solid sandybrown;}'
+		+'.ts:after{content: "[TS]"}'
         +'</style>'
         ;
     //silahkan edit sesuka ente
-    var mTS = '<span style="color:darkorange; font-weight:bold;"><b>[TS]</b></span>';
+    var mTS = '<span style="color:darkorange; font-weight:bold;" class="ts"></span>';
+	/*
+		badge = '<span class="icon-badge plus "></span>'
+		$('.user-name .nickname').after(badge);
+		
+		.icon-badge {
+			vertical-align: middle;
+			margin-left: 5px;
+			display: inline-block;
+			width: 15px;
+			height: 18px;
+			background-image: url(../images/layout/comp-sprites.png);
+		}
+	*/
     var dTS = '<span><b style="color:#F5981D;">Thread</b><b style="color:#1998ed;"> Starter</b></span>';
-    var fTS = '<span style="font-size:24px;"><b style="color:#F5981D;">Thread</b><b style="color:#1998ed;"> Starter</b></span>';
     var juragan = '<span><b style="color:#1998ed;">Juragan</b></span>';
     
     var tsContainer = ''
@@ -72,7 +83,6 @@ $(document).ready(function(){
     //                clog($(this).text());
                     if($(this).text() == a){
                         $(parent).addClass('thread-starter');
-                        $(parent).parent().css('border','1px solid orange');
                         $(user).after(mTS);
                         }
                     });
@@ -98,21 +108,11 @@ $(document).ready(function(){
                 var user = $(this);//.text();
                 var userDetail = $(this).parent().parent();
                 if(user.text() == a){
-// STUCK HERE
-                    if($(parent).has('.entry-head a[name="1"]')){
-                        $(parent).addClass('thread-starter-first');
-                        $(user).append(mTS);
-                        clog(userDetail);
-                        if(isFJB()) dTS = juragan;
-                        $('.thread-starter-first .user-option').prepend(fTS);
-                        }else{
-
-                            $(parent).addClass('thread-starter-desk');
-                            $(user).append(mTS);
-                            clog(userDetail);
-                            if(isFJB()) dTS = juragan;
-                            $(userDetail).children('.user-info').before(dTS);
-                        }
+                    $(parent).addClass('thread-starter-desk');
+                    $(user).append(mTS);
+                    clog(userDetail);
+                    if(isFJB()) dTS = juragan;
+                    $(userDetail).children('.user-info').before(dTS);
                     }
                 });
             }
