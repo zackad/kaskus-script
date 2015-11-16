@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name			Kaskus User Post Viewer
 // @namespace		zackad's script
-// @version			0.7
+// @version			0.8
 // @description		Read Full Post from Kaskus Profile
 // @grant			GM_addStyle
 // @include			http://www.kaskus.co.id/profile/viewallposts/*
@@ -13,7 +13,9 @@
 // ==/UserScript==
 /*
 	CHANGELOG
-		v0.6
+		v0.8
+		- expand/minimize entry-content
+		v0.7
 		- add myquotedpost page
 		v0.6
 		- add mypost page
@@ -32,9 +34,12 @@ $(document).ready(function(){
 		+ '<style type="text/css">'
 		+ '.batas {margin-top: 0px !important; margin-bottom: 0px !important;}'
 		+ 'img {max-width: 100% !important; height: auto !important;}'
+		+ '.limit {max-height: 100px; overflow-y: hidden;}'
+		+ '.expand, .minimize {color: orange;}'
 		+ '</style>'
 		;
 	$('head').append(style);
+	
 	var pItems = $('.entry-content');
 	pItems.each(function(){
 		var postID = $(this).find('a');
@@ -60,7 +65,23 @@ $(document).ready(function(){
 					var source = $(this).attr('data-src');
 					$(this).attr('src', source);
 				});
+				if(currentItem.height() > 100){
+					currentItem.addClass('limit');
+					currentItem.find('h4').prepend('<a href="javascript:void(0);" class="expand">Expand - </a>');
+				}
 			}); 
+	});
+		
+	$('.entry-content').on('click', '.expand', function(){
+		$(this).parent().parent().removeClass('limit');
+		$(this).removeClass('expand').addClass('minimize');
+		$(this).text('Minimize - ');
+	});
+	
+	$('.entry-content').on('click', '.minimize', function(){
+		$(this).parent().parent().addClass('limit');
+		$(this).addClass('expand').removeClass('minimize');
+		$(this).text('Expand - ');
 	});
 	
 	function clog(x){
