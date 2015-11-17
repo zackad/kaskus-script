@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name			Kaskus User Post Viewer
 // @namespace		zackad's script
-// @version			0.8
+// @version			0.9
 // @description		Read Full Post from Kaskus Profile
 // @grant			GM_addStyle
 // @include			http://www.kaskus.co.id/profile/viewallposts/*
@@ -13,6 +13,8 @@
 // ==/UserScript==
 /*
 	CHANGELOG
+		v0.9
+		- hothey to expand/minimize entry content with SHIFT + Z
 		v0.8
 		- expand/minimize entry-content
 		v0.7
@@ -88,4 +90,24 @@ $(document).ready(function(){
 		if(__DEBUG__ == 0) return;
 		console.log(x);
 	}
+	
+	function toggleEntry(){
+		if($('.expand').length == 0){
+			$('.minimize').click();
+		}else{
+			$('.expand').click();
+		}
+	}
+	/* Hotkey */
+    window.addEventListener('keydown', function(e) {
+    var keyCode = e.keyCode;
+    var CSA = [e.ctrlKey, e.shiftKey, e.altKey];
+    clog(keyCode);
+    clog(String(CSA) + '; '+keyCode);
+    
+    // caseof : Shift+Z
+    if( e.shiftKey && keyCode == 90 ){
+        toggleEntry();
+    }
+	}, true);
 });
