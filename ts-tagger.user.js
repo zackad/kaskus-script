@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Kaskus TS Tagger
 // @namespace       zackad's script
-// @version         0.6
+// @version         0.7
 // @description     Give TS kaskus a Tag
 // @grant           GM_addStyle
 // @include         http://m.kaskus.co.id/*
@@ -12,6 +12,8 @@
 // ==/UserScript==
 /*
 CHANGELOG
+v0.7
+- change version number to trigger auto-update
 v0.6
 - put into css instead of inline text
 v0.5
