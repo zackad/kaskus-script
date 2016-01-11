@@ -9,7 +9,7 @@
 // @include			http://www.kaskus.co.id/myforum/mypost
 // @include			http://www.kaskus.co.id/myforum/myquotedpost
 // @require			http://code.jquery.com/jquery-1.10.1.min.js
-// @copyright		2015, zackad
+// @copyright		2015-2016, zackad
 // ==/UserScript==
 /*
 	CHANGELOG

@@ -13,6 +13,7 @@
 // @require        http://code.jquery.com/jquery-1.10.1.min.js
 // @require        http://cdn.kaskus.com/themes_2.0/js/ajaxfileupload.js
 // @run-at         document-end
+// @copyright       2015-2016, zackad
 // ==/UserScript==
 /*
     LATEST UPDATE
@@ -43,17 +44,6 @@ $(document).ready(function(){
         'CCPB,14',
         'Linux,65'
     );
-    //console.log(QL);
-    /*===========================================
-      UPLOAD FILE [planned]
-    *\===========================================*/
-/*
-    var browse = '<input type="file" onchange="ajaxFileUpload();" name="forumimg" id="browse" class="browse" />';
-    var ajaxScript = 'http://cdn.kaskus.com/themes_2.0/js/ajaxfileupload.js';
-    var insertAjax = '<script type="text/javascript" src="'+ ajaxScript + '"></script><script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>';
-    $('#search').after(browse);
-    $('body').append(insertAjax);
-*/    
     
     /*===========================================
       PERMALINK SINGLE POST

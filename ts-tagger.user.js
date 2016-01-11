@@ -8,7 +8,7 @@
 // @include         http://fjb.m.kaskus.co.id/*
 // @include         /^https?://(www|fjb).kaskus.co.id/(thread|lastpost|post|show_post|product|group/discussion)/*/
 // @require         http://code.jquery.com/jquery-1.10.1.min.js
-// @copyright       2015, zackad
+// @copyright       2015-2016, zackad
 // ==/UserScript==
 /*
 CHANGELOG
