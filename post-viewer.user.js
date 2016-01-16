@@ -29,7 +29,7 @@
 		- tested with scratchpad
 */
 $(document).ready(function(){
-	var __DEBUG__ = 0;
+	var __DEBUG__ = 1;
 	var style = ''
 		+ '<style type="text/css">'
 		+ '.batas {margin-top: 0px !important; margin-bottom: 0px !important;}'
