@@ -1,17 +1,19 @@
 // ==UserScript==
 // @name            Kaskus TS Tagger
 // @namespace       zackad's script
-// @version         0.6
+// @version         0.7
 // @description     Give TS kaskus a Tag
 // @grant           GM_addStyle
 // @include         http://m.kaskus.co.id/*
 // @include         http://fjb.m.kaskus.co.id/*
 // @include         /^https?://(www|fjb).kaskus.co.id/(thread|lastpost|post|show_post|product|group/discussion)/*/
 // @require         http://code.jquery.com/jquery-1.10.1.min.js
-// @copyright       2015, zackad
+// @copyright       2015-2016, zackad
 // ==/UserScript==
 /*
 CHANGELOG
+v0.7
+- change version number to trigger auto-update
 v0.6
 - put into css instead of inline text
 v0.5
