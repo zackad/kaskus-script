@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name			Kaskus User Post Viewer
-// @namespace		zackad's script
-// @version			0.9
-// @description		Read Full Post from Kaskus Profile
-// @grant			GM_addStyle
-// @include			http://www.kaskus.co.id/profile/viewallposts/*
-// @include			http://www.kaskus.co.id/viewallposts/*
-// @include			http://www.kaskus.co.id/myforum/mypost
-// @include			http://www.kaskus.co.id/myforum/myquotedpost
-// @require			http://code.jquery.com/jquery-1.10.1.min.js
+// @name		Kaskus User Post Viewer
+// @namespace	zackad's script
+// @version		0.9
+// @description	Read Full Post from Kaskus Profile
+// @grant		GM_addStyle
+// @include		http://www.kaskus.co.id/profile/viewallposts/*
+// @include		http://www.kaskus.co.id/viewallposts/*
+// @include		http://www.kaskus.co.id/myforum/mypost
+// @include		http://www.kaskus.co.id/myforum/myquotedpost
+// @require		http://code.jquery.com/jquery-1.10.1.min.js
 // @copyright		2015-2016, zackad
 // ==/UserScript==
 /*
