@@ -1,0 +1,18 @@
+/*  Give Overlay color on page kaskus
+    author    : zackad
+    copyright : 2016
+*/
+@-moz-document domain("m.kaskus.co.id"){
+  body::after{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Use rgba color to enable transparancy */
+    background: rgba(37, 165, 52, 0.35);
+    width: 100%;
+    height: 100%;
+    content: '';
+    pointer-events: none;
+  }
+}
