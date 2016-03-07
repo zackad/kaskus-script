@@ -3,11 +3,15 @@
 // @namespace   zackad's script
 // @description Hide Unnecessary Notification
 // @include     http://www.kaskus.co.id/*
-// @version     1.1
+// @version     1.2
 // @grant       none
 // @author      zackad
 // ==/UserScript==
-var css = '#after-login > a.notice-new::after, .site-header .dropdown-menu .notice-updated::after, .site-header .dropdown-menu .notice-new::after{'
+var css = '#after-login > a.notice-new::after,'
++ '.site-header .dropdown-menu .notice-updated::after,'
++ '.site-header .dropdown-menu .notice-new::after,'
++ '.navbar-nav.main-menu li#kk-gadget::after,'
++ '.navbar-nav.main-menu li#kk-news::after{'
 + 'display: none;'
 + '}'
 ;
