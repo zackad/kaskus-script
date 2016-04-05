@@ -4,7 +4,7 @@
 // @homepageURL    http://www.kaskus.co.id/profile/4125324
 // @description    Spoiler di m.kaskus layaknya versi desktop
 // @author         zackad
-// @version        0.3.6.17
+// @version        0.3.7
 // @include        http://m.kaskus.co.id/*
 // @include        http://fjb.m.kaskus.co.id/*
 // @include        /^https?://(www|fjb).kaskus.co.id/(thread|lastpost|post|show_post|group/discussion)/*/
@@ -17,9 +17,9 @@
 // ==/UserScript==
 /*
     LATEST UPDATE
-    v0.3.6.16
-    - no need for adapting existing qr
-    - debug mode added
+    v0.3.7
+    - patch read more on fjb.m
+    - prev & next gambar
 */
 $(document).ready(function(){
     /*===========================================
@@ -81,6 +81,36 @@ $(document).ready(function(){
             aEl.href = aEl.href.replace('http://fjb.kaskus.co.id/','http://fjb.m.kaskus.co.id/');
         }
     }
+    // patch read more link on FJB
+    $('a[onclick="readMore();"]').removeAttr('href');
+    
+    /*===========================================
+      KHUSUS FJB THREAD
+    *\===========================================*/
+    function prevNextGen(){
+        var fjbImgContainer = $('.fjb-item-image');
+        var fjbPrevNextIng = fjbImgContainer.next().children('a');
+        fjbPrevNextIng.each(function(){
+            var elem = $(this);
+            elem.attr('data', elem.attr('href'));
+            elem.attr('href', 'javascript:;');
+            elem.click(function(){
+                $.ajax({
+                    url : elem.attr('data'),
+                    dataType : 'html',
+                    success : function(response){
+                        var imgResult = $(response).find('.fjb-item-image center').html();
+                        $('.fjb-item-image center').html(imgResult);
+                        var prevNext = $(response).find('.fjb-item-image').next().html();
+                        $('.fjb-item-image').next().html(prevNext);
+                        prevNextGen();
+                    }
+                })
+            });
+        });
+    }
+    prevNextGen();
+    
     /*===========================================
       SHOW LAST PAGE LINK
     *\===========================================*/
