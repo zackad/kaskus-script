@@ -11,25 +11,25 @@
 // @copyright       2015-2016, zackad
 // ==/UserScript==
 /*
-CHANGELOG
-v0.7
-- change version number to trigger auto-update
-v0.6
-- put into css instead of inline text
-v0.5
-- [bug] image not load
-v0.4
-- fjb support
-v0.3
-- tag color [thanks : ahmad13]
+    CHANGELOG
+        v0.7
+        - change version number to trigger auto-update
+        v0.6
+        - put into css instead of inline text
+        v0.5
+        - [bug] image not load
+        v0.4
+        - fjb support
+        v0.3
+        - tag color [thanks : ahmad13]
 */
 $(document).ready(function(){
     var DEBUG = 0;
     var tID = $('#thread_id');
     tID = tID.attr('value');
-//    clog(tID);
+    // clog(tID);
     
-    //style edit sesuai selera
+    // style edit sesuai selera
     var globalStyle = ''
         +'<style type="text/css">'
         +'.thread-starter {background-color:black; color:white!important; border: sandybrown !important;}'
@@ -38,24 +38,24 @@ $(document).ready(function(){
         +'.thread-starter-desk .entry-head {background-color:darkorange!important;}'
         +'.thread-starter-desk .entry-body {border-left:1px solid sandybrown!important;}'
         +'.thread-starter-desk .entry-footer {border-top:1px solid sandybrown;}'
-		+'.ts:after{content: "[TS]"}'
+        +'.ts:after{content: "[TS]"}'
         +'</style>'
         ;
-    //silahkan edit sesuka ente
+    // silahkan edit sesuka ente
     var mTS = '<span style="color:darkorange; font-weight:bold;" class="ts"></span>';
-	/*
-		badge = '<span class="icon-badge plus "></span>'
-		$('.user-name .nickname').after(badge);
-		
-		.icon-badge {
-			vertical-align: middle;
-			margin-left: 5px;
-			display: inline-block;
-			width: 15px;
-			height: 18px;
-			background-image: url(../images/layout/comp-sprites.png);
-		}
-	*/
+    /*
+    badge = '<span class="icon-badge plus "></span>'
+    $('.user-name .nickname').after(badge);
+
+    .icon-badge {
+        vertical-align: middle;
+        margin-left: 5px;
+        display: inline-block;
+        width: 15px;
+        height: 18px;
+        background-image: url(../images/layout/comp-sprites.png);
+    }
+    */
     var dTS = '<span><b style="color:#F5981D;">Thread</b><b style="color:#1998ed;"> Starter</b></span>';
     var juragan = '<span><b style="color:#1998ed;">Juragan</b></span>';
     
@@ -69,7 +69,7 @@ $(document).ready(function(){
         var ajaxURL = 'http://'+host+'/product/'+ tID;
     else var ajaxURL = 'http://'+host+'/thread/'+ tID;
     
-    //let's call the ajax
+    // let's call the ajax
     if(window.location.href.indexOf('m.kaskus.co.id') > -1){
         $.ajax({
             url: ajaxURL, //'http://m.kaskus.co.id/thread/' + tID,
@@ -82,18 +82,18 @@ $(document).ready(function(){
                 poster.each(function(){
                     var parent = $(this).parent().parent().parent();
                     var user = $(this);
-    //                clog($(this).text());
+                    // clog($(this).text());
                     if($(this).text() == a){
                         $(parent).addClass('thread-starter');
                         $(user).after(mTS);
-                        }
-                    });
+                    }
+                });
                 if(poster == a){
                     $('.author').addClass('thread-starter');
-                    }
                 }
-            });
-        }
+            }
+        });
+    }
     // desktop version
     $.ajax({
         url: ajaxURL, //'http://'+host+'/thread/' + tID,
@@ -104,7 +104,7 @@ $(document).ready(function(){
             var a = $('.ts').text();
             clog('ts desktop ='+ a);
             var poster = $('.postlist .author .user-details .nickname');
-//            clog(poster);
+            // clog(poster);
             poster.each(function(){
                 var parent = $(this).parent().parent().parent().parent().parent();//.parent();//..sUntil('.col-xs-12');
                 var user = $(this);//.text();
@@ -115,10 +115,10 @@ $(document).ready(function(){
                     clog(userDetail);
                     if(isFJB()) dTS = juragan;
                     $(userDetail).children('.user-info').before(dTS);
-                    }
-                });
-            }
-        });
+                }
+            });
+        }
+    });
     function isFJB(){
         if(window.location.host == 'fjb.kaskus.co.id' || window.location.host == 'fjb.m.kaskus.co.id') return true;
         else return false;
