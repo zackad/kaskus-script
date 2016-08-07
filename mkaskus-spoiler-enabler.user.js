@@ -13,7 +13,7 @@
 // @require        http://code.jquery.com/jquery-1.10.1.min.js
 // @require        http://cdn.kaskus.com/themes_2.0/js/ajaxfileupload.js
 // @run-at         document-end
-// @copyright       2015-2016, zackad
+// @copyright      2015-2016, zackad
 // ==/UserScript==
 /*
     LATEST UPDATE
