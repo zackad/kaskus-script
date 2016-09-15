@@ -10,7 +10,6 @@
         -khtml-transform: scale(-1, 1);
         -ms-transform: scale(-1, 1);
     }
-
     /**
      * FOOTER
      */
@@ -20,7 +19,6 @@
     #site-footer {
         margin-top: 0px;
     }
-
     /**
      * POST HEADER
      */
@@ -41,7 +39,6 @@
     #content-wrapper .header .breadcrumbs a {
         background: url(http://puu.sh/i3lAA/c81d4614d7.png)center right no-repeat;
     }
-
     /**
      * WIDTH TOTAL
      */
@@ -52,7 +49,6 @@
     #wrapper.fx .main-h {
         width: 850px!important;
     }
-
     /* NAV ON MYFORUM */
     #subnav,
     .in-btn,
@@ -62,14 +58,13 @@
     .forum-activities .post-list h2 {
         background-color: #666!important;
     }
-
     /**
      * HEADER
      */
     body.forum .main-h,
     .main-h {
         background: #000;
-        height: 30px!important;
+        height: 40px!important;
     }
     #wrapper.fx #site-header .main-h,
     #top-features {
@@ -80,25 +75,27 @@
         margin-bottom: -9px;
     }
     /*#subnav {position:fixed; margin-top:0px; z-index:100;}*/
-    .main-h a {
+    .main-h a#kk-forum,
+    .main-h a#kk-fjb,
+    .main-h a#kk-news {
         background: #000;
-        height: 30px;
-        padding: 0px 10px;
+        height: 40px;
+        padding: 5px 10px;
         line-height: 30px!important;
         color: #fff;
         radius: 2px;
     }
     .main-h a.logo {
         background: #000;
-        height: 30px;
-        line-height: 30px!important;
+        height: 40px;
+        line-height: 40px!important;
     }
     .sxln {
         display: none;
     }
     .main-h a img {
-        margin: 3px 0px 4px 9px!important;
-        line-height: 30px;
+        /*margin: 3px 0px 4px 9px!important;*/
+        line-height: 40px;
     }
     /*img.c-avtr {src:"http://s.kaskus.id/user/avatar/2012/03/10/avatar4125324_2.gif";}*/
     .c-avt img.c-avtr {
@@ -109,19 +106,24 @@
     .main-h a#kk-forum.current:hover,
     .main-h a#kk-forum:hover,
     #wrapper.fx #site-header .main-h a {
-        height: 30px!important;
+        height: 40px!important;
+        position: relative;
+        top: 50%;
+        padding: 5px 10px;
     }
     #content-wrapper .header .breadcrumbs a {
         padding-left: 4px;
     }
-
     /**
      * POST STYLE
      */
     #content-wrapper .entry-content {
         font-size: 14px;
     }
-
+    span.post-quote span[style^="width"] {
+        color: rgb(43, 43, 43) !important;
+        background: rgb(193, 193, 193) !important;
+    }
     /**
      * mQR style
      */
@@ -131,7 +133,6 @@
     .mQR .in-txt #reply-messsage {
         max-width: 824px!important;
     }
-
     /**
      * MYFORUM
      */
@@ -152,7 +153,8 @@
     }
 }
 
-@-moz-document domain("m.kaskus.co.id"), domain("fjb.m.kaskus.co.id") {
+@-moz-document domain("m.kaskus.co.id"),
+domain("fjb.m.kaskus.co.id") {
     /**
      * ADS
      */
