@@ -1,18 +1,24 @@
 // ==UserScript==
 // @name            Kaskus User Post Viewer
 // @namespace       zackad's script
-// @version         0.9
+// @version         0.9.1
 // @description     Read Full Post from Kaskus Profile
 // @grant           GM_addStyle
 // @include         http://www.kaskus.co.id/profile/viewallposts/*
+// @include         https://www.kaskus.co.id/profile/viewallposts/*
 // @include         http://www.kaskus.co.id/viewallposts/*
+// @include         https://www.kaskus.co.id/viewallposts/*
 // @include         http://www.kaskus.co.id/myforum/mypost
+// @include         https://www.kaskus.co.id/myforum/mypost
 // @include         http://www.kaskus.co.id/myforum/myquotedpost
+// @include         https://www.kaskus.co.id/myforum/myquotedpost
 // @require         http://code.jquery.com/jquery-1.10.1.min.js
 // @copyright       2015-2016, zackad
 // ==/UserScript==
 /*
     CHANGELOG
+        v0.9.1
+        - include https url
         v0.9
         - hothey to expand/minimize entry content with SHIFT + Z
         v0.8
