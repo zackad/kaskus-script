@@ -1,22 +1,22 @@
 // ==UserScript==
 // @name            Kaskus User Post Viewer
 // @namespace       zackad's script
-// @version         0.9.1
+// @version         0.9.2
 // @description     Read Full Post from Kaskus Profile
 // @grant           GM_addStyle
-// @include         http://www.kaskus.co.id/profile/viewallposts/*
 // @include         https://www.kaskus.co.id/profile/viewallposts/*
-// @include         http://www.kaskus.co.id/viewallposts/*
 // @include         https://www.kaskus.co.id/viewallposts/*
-// @include         http://www.kaskus.co.id/myforum/mypost
 // @include         https://www.kaskus.co.id/myforum/mypost
-// @include         http://www.kaskus.co.id/myforum/myquotedpost
 // @include         https://www.kaskus.co.id/myforum/myquotedpost
 // @require         http://code.jquery.com/jquery-1.10.1.min.js
 // @copyright       2015-2016, zackad
 // ==/UserScript==
 /*
     CHANGELOG
+        v0.9.2
+        - inlcude https url only
+        - patch ajax url with https
+        - patch unloaded image src
         v0.9.1
         - include https url
         v0.9
@@ -57,7 +57,7 @@ $(document).ready(function(){
         var title = $(this).find('h4');
         clog(title);
         clog(postID);
-        var ajaxURL = 'http://www.kaskus.co.id'+postID;
+        var ajaxURL = 'https://www.kaskus.co.id'+postID;
         clog(ajaxURL);
         $.ajax(ajaxURL).
             done(function(response){
@@ -68,7 +68,7 @@ $(document).ready(function(){
                 currentItem.append('<hr class="batas">');
                 var hasil = $(response).find('.entry').html();
                 currentItem.append(hasil);
-                unloadImage = $('img[src="http://s.kaskus.id/banner/1x1.gif"]');
+                unloadImage = $('img[src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"]');
                 unloadImage.each(function(){
                     var source = $(this).attr('data-src');
                     $(this).attr('src', source);
