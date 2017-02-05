@@ -1,17 +1,22 @@
 // ==UserScript==
 // @name            Kaskus TS Tagger
 // @namespace       zackad's script
-// @version         0.7.1
+// @version         0.7.2
 // @description     Give TS kaskus a Tag
 // @grant           GM_addStyle
-// @include         http://m.kaskus.co.id/*
-// @include         http://fjb.m.kaskus.co.id/*
+// @include         https://m.kaskus.co.id/*
+// @include         https://fjb.m.kaskus.co.id/*
 // @include         /^https?://(www|fjb).kaskus.co.id/(thread|lastpost|post|show_post|product|group/discussion)/*/
 // @require         http://code.jquery.com/jquery-1.10.1.min.js
-// @copyright       2015-2016, zackad
+// @copyright       2015-2017, zackad
 // ==/UserScript==
 /*
     CHANGELOG
+        v0.7.2
+        - patch include url
+        - patch ajax url
+        - copyright update
+        - cleanup
         v0.7.1
         - cleanup
         v0.7
@@ -29,7 +34,7 @@ $(document).ready(function(){
     var DEBUG = 0;
     var tID = $('#thread_id');
     tID = tID.attr('value');
-    
+
     // style edit sesuai selera
     var globalStyle = ''
         +'<style type="text/css">'
@@ -44,19 +49,6 @@ $(document).ready(function(){
         ;
     // silahkan edit sesuka ente
     var mTS = '<span style="color:darkorange; font-weight:bold;" class="ts"></span>';
-    /*
-    badge = '<span class="icon-badge plus "></span>'
-    $('.user-name .nickname').after(badge);
-
-    .icon-badge {
-        vertical-align: middle;
-        margin-left: 5px;
-        display: inline-block;
-        width: 15px;
-        height: 18px;
-        background-image: url(../images/layout/comp-sprites.png);
-    }
-    */
     var dTS = '<span><b style="color:#F5981D;">Thread</b><b style="color:#1998ed;"> Starter</b></span>';
     var juragan = '<span><b style="color:#1998ed;">Juragan</b></span>';
     var tsContainer = ''
@@ -67,9 +59,9 @@ $(document).ready(function(){
     var host = window.location.host;
     var ajaxURL;
     if (isFJB()) {
-        ajaxURL = 'http://'+host+'/product/'+ tID;
+        ajaxURL = 'https://'+host+'/product/'+ tID;
     } else {
-        ajaxURL = 'http://'+host+'/thread/'+ tID;
+        ajaxURL = 'https://'+host+'/thread/'+ tID;
     }
 
     // let's call the ajax
@@ -109,7 +101,6 @@ $(document).ready(function(){
             var a = $('.ts').text();
             clog('ts desktop ='+ a);
             var poster = $('.postlist .author .user-details .nickname');
-            // clog(poster);
             poster.each(function() {
                 var parent = $(this).parent().parent().parent().parent().parent();
                 console.log(parent);
