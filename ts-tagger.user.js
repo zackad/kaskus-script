@@ -103,7 +103,6 @@ $(document).ready(function(){
             var poster = $('.postlist .author .user-details .nickname');
             poster.each(function() {
                 var parent = $(this).parent().parent().parent().parent().parent();
-                console.log(parent);
                 var user = $(this);
                 var userDetail = $(this).parent().parent();
                 if (user.text() == a) {
