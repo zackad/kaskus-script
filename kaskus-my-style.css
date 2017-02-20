@@ -39,6 +39,7 @@
     body.fjb .author.clearfix time,
     .sidebar .sidebar-wrap,
     .site-header--bot,
+    .site-header__quick,
     .site-footer {
         display: none
     }
