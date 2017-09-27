@@ -19,7 +19,7 @@
         background: #eee;
     }
 
-    /** 
+    /**
      * ELEMENT GK PENTING
      */
     body.forum.inner #main.main .container .row.ads-lb-wrap,
@@ -39,7 +39,6 @@
     body.fjb .author.clearfix time,
     .sidebar .sidebar-wrap,
     .site-header--bot,
-    .site-header__quick,
     .site-footer {
         display: none
     }
@@ -148,7 +147,7 @@
     /*.thread-prevnext a.prev-thread, .thread-prevnext a.next-thread{width:341px;}*/
     /*.thread-prevnext a.prev-thread span, .thread-prevnext a.next-thread span{width:341px;}*/
     /*.thread-prevnext a.next-thread > div{width:341px; left:341px;}*/
-    
+
     /**
      * USER TOOLS
      */
