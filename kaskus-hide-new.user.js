@@ -3,6 +3,7 @@
 // @namespace       zackad's script
 // @description     Hide Unnecessary Notification
 // @include         http://www.kaskus.co.id/*
+// @include         https://www.kaskus.co.id/*
 // @version         1.4
 // @grant           none
 // @author          zackad
