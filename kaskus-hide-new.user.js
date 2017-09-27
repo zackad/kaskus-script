@@ -4,7 +4,7 @@
 // @description     Hide Unnecessary Notification
 // @include         http://www.kaskus.co.id/*
 // @include         https://www.kaskus.co.id/*
-// @version         1.4
+// @version         1.4.1
 // @grant           none
 // @author          zackad
 // ==/UserScript==
