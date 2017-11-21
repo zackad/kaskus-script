@@ -11,8 +11,8 @@ Tambahkan tag/gelar pada _thread starter_ untuk membedakannya dari pengunjung tr
 
 **Preview**
 
->![[First Post](https://s.kaskus.id/images/2015/05/27/1178430_20150527083853.PNG)]()
->![[Thread Starter interact with guest](https://s.kaskus.id/images/2015/05/27/1178430_20150527083919.PNG)]()
+>![First Post](https://s.kaskus.id/images/2015/05/27/1178430_20150527083853.PNG)
+>![Thread Starter interact with guest](https://s.kaskus.id/images/2015/05/27/1178430_20150527083919.PNG)
 
 #### Kaskus User Post Viewer
 
