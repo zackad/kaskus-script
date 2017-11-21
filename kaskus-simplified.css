@@ -93,6 +93,12 @@ domain("fjb.kaskus.co.id") {
         padding-top: 55px;
     }
 
+    #breadcrumbs-wrap,
+    #forum-thread-top,
+    .postlist {
+        margin-bottom: 0;
+    }
+
     /**
      * USER CONTROL
      */
