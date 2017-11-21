@@ -96,6 +96,7 @@ domain("fjb.kaskus.co.id") {
 
     #breadcrumbs-wrap,
     #forum-thread-top,
+    .thread-head,
     .postlist,
     .thread-prevnext {
         margin-bottom: 0;
