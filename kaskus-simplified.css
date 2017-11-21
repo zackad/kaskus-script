@@ -25,6 +25,7 @@ domain("fjb.kaskus.co.id") {
      * ELEMENT GK PENTING
      */
     body.forum.inner #main.main .container .row.ads-lb-wrap,
+    .ads-lb-wrap,
     #bottom-leaderboard,
     #feedback,
     #leader-banner,
@@ -95,7 +96,8 @@ domain("fjb.kaskus.co.id") {
 
     #breadcrumbs-wrap,
     #forum-thread-top,
-    .postlist {
+    .postlist,
+    .thread-prevnext {
         margin-bottom: 0;
     }
 
