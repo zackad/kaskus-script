@@ -5,7 +5,7 @@ kumpulan script sederhana biar ngaskus makin asik
 
 #### Kaskus TS Tagger
 
-Install From **[OpenuserJs](https://openuserjs.org/scripts/zackad/Kaskus_TS_Tagger)** or directly from **[github](https://github.com/zackad/kaskus-script/raw/master/ts-tagger.user.js)**.
+Install From **[OpenUserJs](https://openuserjs.org/scripts/zackad/Kaskus_TS_Tagger)** or directly from **[github](https://github.com/zackad/kaskus-script/raw/master/userscripts/ts-tagger.user.js)**.
 
 Tambahkan tag/gelar pada _thread starter_ untuk membedakannya dari pengunjung trit yang meninggalkan komentar. Gak usah lagi lihat page one untuk tahu siapa TS-nya. Kritik dan saran bisa langsung ke [official thread](https://www.kaskus.co.id/thread/5565d0c432e2e674608b456a) atau [trit mozilla firefox](https://www.kaskus.co.id/thread/5352375ebccb171b7e8b45bc/all-about-mozilla-firefox-add-ons-scripts-fans-club--part-4/).
 
