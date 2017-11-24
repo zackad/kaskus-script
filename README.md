@@ -27,3 +27,11 @@ TODO
 TODO
 
 ## Userstyles
+
+#### Kaskus Simplified
+
+Darken and hide all craps from kaskus forum. Install from [Userstyle](https://userstyles.org/styles/150801/kaskus-simplified) with Stylish or Stylus add-on.
+
+**Preview**
+
+>![My Forum](https://i.imgur.com/AmLLkUh.png)
