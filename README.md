@@ -35,3 +35,7 @@ Darken and hide all craps from kaskus forum. Install from [Userstyle](https://us
 **Preview**
 
 >![My Forum](https://i.imgur.com/AmLLkUh.png)
+
+#### m.kaskus simple style
+
+Install from [Userstyle](https://userstyles.org/styles/111135/m-kaskus-simple-style)
