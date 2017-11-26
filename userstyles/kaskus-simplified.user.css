@@ -1,3 +1,12 @@
+/* ==UserStyle==
+@name           Kaskus Simplified
+@namespace      https://github.com/zackad;
+@description    Darken and hide all craps from kaskus forum.
+@version        0.1.0
+@author         zackad <zackad.dev@gmail.com> (http://zackad.com)
+@licence        MIT
+==/UserStyle== */
+
 @-moz-document domain("www.kaskus.co.id"),
 domain("fjb.kaskus.co.id") {
     /**
