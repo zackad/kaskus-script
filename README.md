@@ -1,9 +1,11 @@
-# kaskus-script
+# Kaskus Script
 kumpulan script sederhana biar ngaskus makin asik
 
 ## Userscripts
 
-#### Kaskus TS Tagger
+Please install script manager such as [Tampermonkey](https://tampermonkey.net/) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) to your browser before installing this userscipts.
+
+### Kaskus TS Tagger
 
 Install From **[OpenUserJs](https://openuserjs.org/scripts/zackad/Kaskus_TS_Tagger)** or directly from **[github](https://github.com/zackad/kaskus-script/raw/master/userscripts/ts-tagger.user.js)**.
 
@@ -14,28 +16,38 @@ Tambahkan tag/gelar pada _thread starter_ untuk membedakannya dari pengunjung tr
 >![First Post](https://s.kaskus.id/images/2015/05/27/1178430_20150527083853.PNG)
 >![Thread Starter interact with guest](https://s.kaskus.id/images/2015/05/27/1178430_20150527083919.PNG)
 
-#### Kaskus User Post Viewer
+### Kaskus User Post Viewer
 
 TODO
 
-#### mKaskus Spoiler Enabler
+### mKaskus Spoiler Enabler
 
 TODO
 
-#### Kaskus Hide New
+### Kaskus Hide New
 
 TODO
 
 ## Userstyles
 
-#### Kaskus Simplified
+Before installing userstyle below, please install style manager add-on to your browser. Recommended using [Stylus](https://add0n.com/stylus.html) as it's support installing userstyle that has meta information.
+
+### Kaskus Simplified
 
 Darken and hide all craps from kaskus forum. Install from [Userstyle](https://userstyles.org/styles/150801/kaskus-simplified) with Stylish or Stylus add-on.
+
+Or [install](https://github.com/zackad/kaskus-script/raw/master/userstyles/kaskus-simplified.user.css) directly from github repo to get uptodate version using Stylus add-on.
 
 **Preview**
 
 >![My Forum](https://i.imgur.com/AmLLkUh.png)
 
-#### m.kaskus simple style
+### mKkaskus Simple
 
-Install from [Userstyle](https://userstyles.org/styles/111135/m-kaskus-simple-style)
+Install from [Userstyle](https://userstyles.org/styles/111135/m-kaskus-simple-style).
+
+Or [install](https://github.com/zackad/kaskus-script/raw/master/userstyles/mKaskus-simple.user.css) directly from github.
+
+**Preview**
+
+>![My Forum](https://i.imgur.com/XIO8lts.png)
