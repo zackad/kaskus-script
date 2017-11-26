@@ -1,3 +1,12 @@
+/* ==UserStyle==
+@name           mKaskus simple
+@namespace      https://github.com/zackad;
+@description    Darken and widen kaskus mobile site.
+@version        0.1.0
+@author         zackad <zackad.dev@gmail.com> (http://zackad.com)
+@licence        MIT
+==/UserStyle== */
+
 @-moz-document domain("m.kaskus.co.id") {
     /**
      * FLIP THE TV
