@@ -2,7 +2,7 @@
 @name           Kaskus Simplified
 @namespace      https://github.com/zackad;
 @description    Darken and hide all craps from kaskus forum.
-@version        0.1.0
+@version        0.1.1
 @author         zackad <zackad.dev@gmail.com> (http://zackad.com)
 @licence        MIT
 ==/UserStyle== */
@@ -54,12 +54,10 @@ domain("fjb.kaskus.co.id") {
     .site-footer {
         display: none
     }
-    /* .related-thread .button-related .back-to-top .fa {font-size: 16px; opacity: .6;}*/
-    /* .related-thread .button-related .back-to-top{border:none}*/
+
     /**
      * HEADER
      */
-    /* body header.navbar{background:#343A3A;box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.52)}*/
     .site-header__wrapper--forum,
     body header.navbar {
         background: #343030;
@@ -145,9 +143,6 @@ domain("fjb.kaskus.co.id") {
     /**
      * STYLE DI HALAMAN THREAD
      */
-    /* lebar postingan */
-    /* body.response #thread_post_list .row.nor-post .postlist .entry-body {width: 902px; float: left; border-left: 1px solid #d4d4d4; min-height: 275px; position: relative; padding: 0px;}*/
-    /* warna header post */
     body.response.forum .postlist .entry-head {
         background: #242A2A;
     }
@@ -159,13 +154,6 @@ domain("fjb.kaskus.co.id") {
         z-index: 3;
     }
 
-    /**
-     * THERAD-PREVNEXT
-     */
-    /*.thread-prevnext {width:1024px;}*/
-    /*.thread-prevnext a.prev-thread, .thread-prevnext a.next-thread{width:341px;}*/
-    /*.thread-prevnext a.prev-thread span, .thread-prevnext a.next-thread span{width:341px;}*/
-    /*.thread-prevnext a.next-thread > div{width:341px; left:341px;}*/
     /**
      * USER TOOLS
      */
@@ -212,7 +200,6 @@ domain("fjb.kaskus.co.id") {
     /**
      * BREADCRUMB
      */
-    /*#breadcrumbs-wrap {background: #FFAAAA;}*/
     .quick-navigation {
         margin-left: 72px;
         width: 1024px;
