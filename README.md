@@ -20,7 +20,10 @@ Tambahkan tag/gelar pada _thread starter_ untuk membedakannya dari pengunjung tr
 
 ### Kaskus User Post Viewer
 
-TODO
+[![Install directly](https://img.shields.io/badge/Install%20directly-Userscript-blue.svg)](https://openuserjs.org/scripts/zackad/Kaskus_User_Post_Viewer)
+[![Install directly](https://img.shields.io/badge/Install%20from-OpenUserJS-3498db.svg)](https://openuserjs.org/scripts/zackad/Kaskus_User_Post_Viewer)
+
+Read Full Post from Kaskus Profile.
 
 ### mKaskus Spoiler Enabler
 
