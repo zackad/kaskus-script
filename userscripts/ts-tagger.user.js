@@ -1,17 +1,21 @@
 // ==UserScript==
 // @name            Kaskus TS Tagger
-// @namespace       zackad's script
-// @version         0.7.3
+// @namespace       https://github.com/zackad
+// @version         0.7.4
 // @description     Give TS kaskus a Tag
 // @grant           GM_addStyle
 // @include         https://m.kaskus.co.id/*
 // @include         https://fjb.m.kaskus.co.id/*
 // @include         /^https?://(www|fjb).kaskus.co.id/(thread|lastpost|post|show_post|product|group/discussion)/*/
 // @require         http://code.jquery.com/jquery-1.10.1.min.js
+// @license         MIT; https://github.com/zackad/kaskus-script/blob/master/LICENSE
 // @copyright       2015-2017, zackad
 // ==/UserScript==
 /*
     CHANGELOG
+        V0.7.4
+        - licence type and url
+        - change namespace
         v0.7.3
         - patch border to prevent content overflow
         v0.7.2
