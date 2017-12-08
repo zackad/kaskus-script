@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Kaskus TS Tagger
 // @namespace       zackad's script
-// @version         0.7.2
+// @version         0.7.3
 // @description     Give TS kaskus a Tag
 // @grant           GM_addStyle
 // @include         https://m.kaskus.co.id/*
@@ -12,6 +12,8 @@
 // ==/UserScript==
 /*
     CHANGELOG
+        v0.7.3
+        - patch border to prevent content overflow
         v0.7.2
         - patch include url
         - patch ajax url
@@ -40,7 +42,7 @@ $(document).ready(function(){
         +'<style type="text/css">'
         +'.thread-starter {background-color:black; color:white!important; border: sandybrown !important;}'
         +'.thread-starter .fn, .thread-starter .permalink {color:white!important}'
-        +'.thread-starter-desk {border:1px solid sandybrown!important;}'
+        +'.thread-starter-desk .postlist {border:1px solid sandybrown!important;}'
         +'.thread-starter-desk .entry-head {background-color:darkorange!important;}'
         +'.thread-starter-desk .entry-body {border-left:1px solid sandybrown!important;}'
         +'.thread-starter-desk .entry-footer {border-top:1px solid sandybrown;}'
