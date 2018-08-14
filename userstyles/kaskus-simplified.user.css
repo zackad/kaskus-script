@@ -2,7 +2,7 @@
 @name           Kaskus Simplified
 @namespace      https://github.com/zackad;
 @description    Darken and hide all craps from kaskus forum.
-@version        0.1.1
+@version        0.1.2
 @author         zackad <zackad.dev@gmail.com> (http://zackad.com)
 @licence        MIT
 ==/UserStyle== */
@@ -108,6 +108,10 @@ domain("fjb.kaskus.co.id") {
     .thread-prevnext {
         margin-bottom: 0;
     }
+    
+    .postlist__wrapper {
+        background: white;
+    }
 
     /**
      * USER CONTROL
@@ -168,7 +172,7 @@ domain("fjb.kaskus.co.id") {
         cursor: pointer;
         border: 1px solid transparent;
         white-space: nowrap;
-        -moz-user-select: -moz- none;
+        -moz-user-select: -moz-none;
         -ms-user-select: none;
         -webkit-user-select: none;
         user-select: none;
