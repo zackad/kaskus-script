@@ -14,4 +14,8 @@
     .sidebar {
         display: none;
     }
+
+    code {
+        display: block;
+    }
 }
