@@ -23,7 +23,8 @@
         width: var(--fullwidth);
     }
 
-    div[id^='post'] {
+    div[id^='post'],
+    div[id^='thread'] {
         margin-bottom: 3px;
     }
 
