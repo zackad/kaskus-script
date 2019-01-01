@@ -23,6 +23,10 @@
         width: var(--fullwidth);
     }
 
+    div[id^='post'] {
+        margin-bottom: 3px;
+    }
+
     code {
         display: block;
     }
