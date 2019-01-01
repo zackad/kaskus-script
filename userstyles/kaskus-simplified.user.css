@@ -30,6 +30,28 @@
         margin-bottom: 3px;
     }
 
+    div[id^='post'] {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+
+    div[id^='post'] > div:nth-child(1) {
+        width: 20%;
+    }
+
+    div[id^='post'] > div.Ai\(c\) {
+        display: none;
+    }
+
+    div[id^='post'] > div:nth-child(2),
+    div[id^='post'] > div:nth-child(3) {
+        width: 80%;
+    }
+
+    div[id^='post'] > div:last-child {
+        flex-grow: 1;
+    }
+
     code {
         display: block;
     }
