@@ -7,12 +7,20 @@
 @license        MIT
 ==/UserStyle== */
 @-moz-document domain("www.kaskus.co.id") {
+    :root {
+        --fullwidth: 100%;
+    }
+
     /**
     * Hide unimportant elements
     */
     .jsMainFooter,
     .sidebar {
         display: none;
+    }
+
+    .column {
+        width: var(--fullwidth);
     }
 
     code {
