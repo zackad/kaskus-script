@@ -48,6 +48,8 @@
     div[id^='post'] > div:nth-child(1) > div img {
         border-radius: 0;
         height: auto;
+        max-height: 120px;
+        max-width: 120px;
         width: 100%;
     }
 
@@ -60,7 +62,7 @@
     }
 
     div[id^='post'] > div:nth-child(1) > div > div:nth-child(2) > a,
-    div[id^='post'] > div:nth-child(1) > div > div:nth-child(2) span {
+    div[id^='post'] > div:nth-child(1) > div > div:nth-child(2) > span {
         display: block;
         width: 100%;
     }
