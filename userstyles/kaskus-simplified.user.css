@@ -7,4 +7,11 @@
 @license        MIT
 ==/UserStyle== */
 @-moz-document domain("www.kaskus.co.id") {
+    /**
+    * Hide unimportant elements
+    */
+    .jsMainFooter,
+    .sidebar {
+        display: none;
+    }
 }
