@@ -15,7 +15,8 @@
     * Hide unimportant elements
     */
     .jsMainFooter,
-    .sidebar {
+    .sidebar,
+    .widgetGeneralSpot {
         display: none;
     }
 
