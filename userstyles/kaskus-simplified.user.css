@@ -36,7 +36,8 @@
     }
 
     div[id^='post'] > div:nth-child(1) {
-        width: 20%;
+        margin-right: 1px;
+        width: calc(20% - 1px);
     }
 
     div[id^='post'] > div:nth-child(1) > div {
@@ -61,6 +62,7 @@
 
     div[id^='post'] > div:last-child {
         flex-grow: 1;
+        margin-top: 1px;
     }
 
     code {
