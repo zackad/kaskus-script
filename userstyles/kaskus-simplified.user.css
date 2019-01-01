@@ -46,6 +46,7 @@
     div[id^='post'] > div:nth-child(2),
     div[id^='post'] > div:nth-child(3) {
         width: 80%;
+        margin-top: -1px;
     }
 
     div[id^='post'] > div:last-child {
