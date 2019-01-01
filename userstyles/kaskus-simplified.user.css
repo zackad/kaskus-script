@@ -14,6 +14,7 @@
     /**
     * Hide unimportant elements
     */
+    .site-footer,
     .jsMainFooter,
     .sidebar,
     .widgetGeneralSpot {
