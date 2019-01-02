@@ -60,8 +60,8 @@
         flex-wrap: wrap;
     }
 
-    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) > a,
-    div[id^='post'] > div:nth-child(1) > div > div:nth-child(2) > span {
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) div[itemprop='name'] > *,
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) div[itemprop='name'] + div > span {
         display: block;
         width: 100%;
     }
