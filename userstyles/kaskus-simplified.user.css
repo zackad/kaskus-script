@@ -103,11 +103,14 @@
     }
 
     .jsNavHeader,
-    .jsStickyHeader {
+    .jsStickyHeader,
+    .site-header,
+    .site-header__wrapper--scrolled {
         background-color: var(--bg-darker) !important;
     }
 
-    .jsNavHeader > div:last-child {
+    .jsNavHeader > div:last-child,
+    .site-header--bot {
         background-color: var(--bg-darkest) !important;
     }
 
