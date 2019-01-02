@@ -78,9 +78,11 @@
         width: 84%;
     }
 
-    div[id^='post'][itemtype] > div:last-child {
-        flex-grow: 1;
+    div[id^='post'][itemtype] > div:last-child,
+    div[id^='post'][itemtype] > div:nth-child(3),
+    div[id^='post'][itemtype] > form {
         margin-top: 1px;
+        width: 100%;
     }
 
     body {
