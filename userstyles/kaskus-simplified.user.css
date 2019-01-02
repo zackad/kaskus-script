@@ -107,6 +107,10 @@
         background-color: var(--bg-darkest) !important;
     }
 
+    .jsMainContent > div {
+        margin: 0;
+    }
+
     code {
         display: block;
     }
