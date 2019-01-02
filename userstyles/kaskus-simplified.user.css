@@ -24,6 +24,7 @@
     }
 
     .column {
+        margin: 0;
         width: var(--fullwidth);
     }
 
