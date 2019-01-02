@@ -92,6 +92,12 @@
         background-image: var(--bg-pattern);
     }
 
+    .jsBreadcrumb {
+        background-color: var(--bg-darker);
+        padding: 5px 15px;
+        color: #eee;
+    }
+
     .jsNavHeader,
     .jsStickyHeader {
         background-color: var(--bg-darker) !important;
