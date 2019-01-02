@@ -14,7 +14,7 @@
     /**
     * Hide unimportant elements
     */
-    div[id^='post'] > div:nth-child(1) > div > div:nth-child(2) i,
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) i,
     .site-footer,
     .jsMainFooter,
     .sidebar,
@@ -26,26 +26,26 @@
         width: var(--fullwidth);
     }
 
-    div[id^='post'],
+    div[id^='post'][itemtype],
     div[id^='thread'] {
         margin-bottom: 3px;
     }
 
-    div[id^='post'] {
+    div[id^='post'][itemtype] {
         display: flex !important;
         flex-wrap: wrap;
     }
 
-    div[id^='post'] > div:nth-child(1) {
+    div[id^='post'][itemtype] > div:nth-child(1) {
         margin-right: 1px;
         width: calc(18% - 1px);
     }
 
-    div[id^='post'] > div:nth-child(1) > div {
+    div[id^='post'][itemtype] > div:nth-child(1) > div {
         flex-wrap: wrap;
     }
 
-    div[id^='post'] > div:nth-child(1) > div img {
+    div[id^='post'][itemtype] > div:nth-child(1) > div img {
         border-radius: 0;
         height: auto;
         max-height: 120px;
@@ -53,31 +53,31 @@
         width: 100%;
     }
 
-    div[id^='post'] > div:nth-child(1) > div > div:nth-child(2) {
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) {
         margin: 5px 0;
     }
 
-    div[id^='post'] > div:nth-child(1) > div > div:nth-child(2) > div {
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) > div {
         flex-wrap: wrap;
     }
 
-    div[id^='post'] > div:nth-child(1) > div > div:nth-child(2) > a,
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) > a,
     div[id^='post'] > div:nth-child(1) > div > div:nth-child(2) > span {
         display: block;
         width: 100%;
     }
 
-    div[id^='post'] > div.Ai\(c\) {
+    div[id^='post'][itemtype] > div.Ai\(c\) {
         display: none;
     }
 
-    div[id^='post'] > div:nth-child(2),
-    div[id^='post'] > div:nth-child(3) {
+    div[id^='post'][itemtype] > div:nth-child(2),
+    div[id^='post'][itemtype] > div:nth-child(3) {
         margin-top: -1px;
         width: 82%;
     }
 
-    div[id^='post'] > div:last-child {
+    div[id^='post'][itemtype] > div:last-child {
         flex-grow: 1;
         margin-top: 1px;
     }
