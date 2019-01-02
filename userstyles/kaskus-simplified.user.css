@@ -87,9 +87,14 @@
 
     div[id^='post'][itemtype] > div:last-child,
     div[id^='post'][itemtype] > div:nth-child(3),
-    div[id^='post'][itemtype] > form {
+    div[id^='post'][itemtype] > form,
+    .main-content {
         margin-top: 1px;
         width: 100%;
+    }
+
+    .entry-body {
+        width: calc(100% - 120px) !important;
     }
 
     body {
