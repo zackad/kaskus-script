@@ -126,6 +126,10 @@
         background-color: var(--bg-light);
     }
 
+    .post-reply-button {
+        margin: 10px 0;
+    }
+
     code {
         display: block;
     }
