@@ -55,7 +55,6 @@
 
     div[id^='post'][itemtype] > div:nth-child(1) > div img {
         border-radius: 0;
-        height: auto;
         height: 120px;
         width: 120px;
     }
