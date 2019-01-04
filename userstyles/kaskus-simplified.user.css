@@ -127,7 +127,15 @@
         background-color: var(--bg-lighter);
     }
 
+    .live-posting.new,
+    .panel-wrapper.menu a.fold,
+    .panel-wrapper.menu a.fold:hover,
+    .panel-wrapper.menu.active a.fold {
+        background-color: var(--bg-darker);
+    }
+
     table.table-striped thead th,
+    #selected_Sub_Menu,
     .sub-header {
         background-color: var(--bg-dark);
         color: var(--bg-light);
