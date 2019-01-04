@@ -123,8 +123,15 @@
     /**
     * Darken background
     */
-    div[id^='post'][itemtype] > div {
+    div[id^='post'][itemtype] > div,
+    .user-home {
         background-color: var(--bg-lighter);
+    }
+
+    table.table-striped thead th,
+    .sub-header {
+        background-color: var(--bg-dark);
+        color: var(--bg-light);
     }
 
     .quote {
