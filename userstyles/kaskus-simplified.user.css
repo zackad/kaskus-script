@@ -123,6 +123,7 @@
     * Darken background
     */
     div[id^='post'][itemtype] > div,
+    .postlist,
     .user-home {
         background-color: var(--bg-lighter);
     }
