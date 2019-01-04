@@ -128,6 +128,7 @@
         background-color: var(--bg-lighter);
     }
 
+    body.response.forum .postlist .entry-head,
     #forum-thread-list-top,
     .user-home .user-home-content .header,
     .live-posting.new,
@@ -147,6 +148,8 @@
         color: var(--bg-light);
     }
 
+    div[id^='thread'],
+    .mainContent .column > div,
     .quote {
         background-color: var(--bg-light);
     }
