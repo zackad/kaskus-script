@@ -85,7 +85,6 @@
     }
 
     div[id^='post'][itemtype] > div:last-child,
-    div[id^='post'][itemtype] > div:nth-child(3),
     div[id^='post'][itemtype] > form,
     .main-content {
         margin-top: 1px;
