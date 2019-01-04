@@ -44,7 +44,6 @@
     }
 
     div[id^='post'][itemtype] > div:nth-child(1) {
-        background-color: var(--bg-lighter);
         margin-right: 1px;
         width: calc(16% - 1px);
     }
@@ -79,7 +78,6 @@
 
     div[id^='post'][itemtype] > div:nth-child(2),
     div[id^='post'][itemtype] > div:nth-child(3) {
-        background-color: var(--bg-lighter);
         margin-top: -1px;
         width: 84%;
     }
@@ -120,6 +118,13 @@
 
     .jsMainContent > div {
         margin: 0;
+    }
+
+    /**
+    * Darken background
+    */
+    div[id^='post'][itemtype] > div {
+        background-color: var(--bg-lighter);
     }
 
     .quote {
