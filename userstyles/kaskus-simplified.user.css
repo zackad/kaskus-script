@@ -127,15 +127,18 @@
         background-color: var(--bg-lighter);
     }
 
+    .user-home .user-home-content .header,
     .live-posting.new,
     .panel-wrapper.menu a.fold,
     .panel-wrapper.menu a.fold:hover,
     .panel-wrapper.menu.active a.fold {
         background-color: var(--bg-darker);
+        color: var(--bg-light);
     }
 
     table.table-striped thead th,
     #selected_Sub_Menu,
+    .entry-post .meta,
     .sub-header {
         background-color: var(--bg-dark);
         color: var(--bg-light);
