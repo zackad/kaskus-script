@@ -127,6 +127,7 @@
         background-color: var(--bg-lighter);
     }
 
+    #forum-thread-list-top,
     .user-home .user-home-content .header,
     .live-posting.new,
     .panel-wrapper.menu a.fold,
@@ -136,10 +137,11 @@
         color: var(--bg-light);
     }
 
-    table.table-striped thead th,
     #selected_Sub_Menu,
     .entry-post .meta,
-    .sub-header {
+    .sub-header,
+    .table-striped thead th,
+    .table.listing thead tr th {
         background-color: var(--bg-dark);
         color: var(--bg-light);
     }
