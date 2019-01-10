@@ -93,35 +93,45 @@
         width: calc(100% - 120px) !important;
     }
 
-    body {
-        background-image: var(--bg-pattern);
-    }
-
     .jsBreadcrumb {
-        background-color: var(--bg-darker);
         padding: 5px 15px;
         color: #eee;
-    }
-
-    .jsNavHeader,
-    .jsStickyHeader,
-    .site-header,
-    .site-header__wrapper--scrolled {
-        background-color: var(--bg-darker) !important;
-    }
-
-    .jsNavHeader > div:last-child,
-    .site-header--bot {
-        background-color: var(--bg-darkest) !important;
     }
 
     .jsMainContent > div {
         margin: 0;
     }
 
+    .post-reply-button {
+        margin: 10px 0;
+    }
+
+    code {
+        display: block;
+    }
+
     /**
-    * Darken background
+    * Color scheme related part
     */
+    body {
+        background-image: var(--bg-pattern);
+    }
+
+    div[id^='thread'],
+    .mainContent .column > div,
+    .quote {
+        background-color: var(--bg-light);
+    }
+
+    table.table-striped thead th,
+    #selected_Sub_Menu,
+    .entry-post .meta,
+    .sub-header,
+    .table.listing thead tr th {
+        background-color: var(--bg-dark);
+        color: var(--bg-light);
+    }
+
     div[id^='post'][itemtype] > div,
     .postlist,
     .user-home {
@@ -139,26 +149,16 @@
         color: var(--bg-light);
     }
 
-    table.table-striped thead th,
-    #selected_Sub_Menu,
-    .entry-post .meta,
-    .sub-header,
-    .table.listing thead tr th {
-        background-color: var(--bg-dark);
-        color: var(--bg-light);
+    .jsBreadcrumb,
+    .jsNavHeader,
+    .jsStickyHeader,
+    .site-header,
+    .site-header__wrapper--scrolled {
+        background-color: var(--bg-darker) !important;
     }
 
-    div[id^='thread'],
-    .mainContent .column > div,
-    .quote {
-        background-color: var(--bg-light);
-    }
-
-    .post-reply-button {
-        margin: 10px 0;
-    }
-
-    code {
-        display: block;
+    .jsNavHeader > div:last-child,
+    .site-header--bot {
+        background-color: var(--bg-darkest) !important;
     }
 }
