@@ -25,6 +25,7 @@
     }
 
     div[id^='thread'],
+    .jsNoticeBoard > div,
     .mainContent .column > div,
     .quote {
         background-color: var(--bg-darker);
