@@ -40,6 +40,7 @@
         background-color: var(--bg-darker);
     }
 
+    body.forum .listing-table .post-title a,
     textarea,
     .mainContent a,
     .pagination li a,
@@ -67,16 +68,18 @@
         color: var(--bg-light);
     }
 
+    table tr:nth-child(odd) td,
     .jsBreadcrumb,
     .jsMainContent,
     .jsNavHeader,
     .jsStickyHeader,
+    .listing-wrapper .footer,
     .site-header,
     .site-header__wrapper--scrolled {
         background-color: var(--bg-darker) !important;
     }
 
-    table tr:nth-child(2n) td,
+    table tr:nth-child(even) td,
     .jsNavHeader > div:last-child,
     .quote,
     .site-header--bot {
