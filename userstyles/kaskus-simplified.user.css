@@ -25,6 +25,7 @@
     }
 
     div[id^='post'] > div,
+    div[id^='post'] + div,
     div[id^='post'][itemtype] > div,
     div[id^='thread'],
     div[data-postid],
