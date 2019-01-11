@@ -63,7 +63,7 @@
     .panel-wrapper.menu a.fold,
     .panel-wrapper.menu a.fold:hover,
     .panel-wrapper.menu.active a.fold {
-        background-color: var(--bg-darker);
+        background-color: var(--bg-darkest);
         color: var(--bg-light);
     }
 
@@ -76,6 +76,7 @@
         background-color: var(--bg-darker) !important;
     }
 
+    table tr:nth-child(2n) td,
     .jsNavHeader > div:last-child,
     .quote,
     .site-header--bot {
