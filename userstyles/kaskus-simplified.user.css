@@ -24,15 +24,18 @@
         color: var(--bg-light);
     }
 
+    div[id^='post'][itemtype] > div,
     div[id^='thread'],
     .jsNoticeBoard > div,
     .mainContent .column > div,
-    .quote {
+    .postlist,
+    .user-home {
         background-color: var(--bg-darker);
     }
 
     .mainContent a,
-    .pagination li a {
+    .pagination li a,
+    .quote {
         color: var(--bg-light);
     }
 
@@ -43,12 +46,6 @@
     .table.listing thead tr th {
         background-color: var(--bg-dark);
         color: var(--bg-light);
-    }
-
-    div[id^='post'][itemtype] > div,
-    .postlist,
-    .user-home {
-        background-color: var(--bg-lighter);
     }
 
     body.response.forum .postlist .entry-head,
@@ -72,6 +69,7 @@
     }
 
     .jsNavHeader > div:last-child,
+    .quote,
     .site-header--bot {
         background-color: var(--bg-darkest) !important;
     }
