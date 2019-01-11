@@ -24,15 +24,21 @@
         color: var(--bg-light);
     }
 
+    div[id^='post'] > div,
     div[id^='post'][itemtype] > div,
     div[id^='thread'],
+    div[data-postid],
+    div[data-postid] div,
+    #sort-wrapper + div,
     .jsNoticeBoard > div,
+    .jsFirstPostItemContent div,
     .mainContent .column > div,
     .postlist,
     .user-home {
         background-color: var(--bg-darker);
     }
 
+    textarea,
     .mainContent a,
     .pagination li a,
     .quote {
