@@ -77,11 +77,15 @@
     }
 
     table tr:nth-child(odd) td,
+    #reply-messsage,
+    #quick-reply .entry-head,
+    #quick-reply .reply-thread,
     .jsBreadcrumb,
     .jsMainContent,
     .jsNavHeader,
     .jsStickyHeader,
     .listing-wrapper .footer,
+    .markItUpHeader,
     .site-header,
     .site-header__wrapper--scrolled {
         background-color: var(--bg-darker) !important;
