@@ -49,6 +49,7 @@
     #form-title,
     #preview-title,
     .mainContent a,
+    .markItUp a,
     .pagination li a,
     .quote {
         color: var(--bg-light) !important;
