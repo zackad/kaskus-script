@@ -30,6 +30,7 @@
     div[id^='thread'],
     div[data-postid],
     div[data-postid] div,
+    #breadcrumbs-wrap,
     #sort-wrapper + div,
     #thread_post_list > div:first-child,
     .jsNoticeBoard > div,
@@ -48,6 +49,11 @@
     .pagination li a,
     .quote {
         color: var(--bg-light) !important;
+    }
+
+    #breadcrumbs-wrap a,
+    .home-breadcrumb {
+        color: var(--bg-lighter) !important;
     }
 
     table.table-striped thead th,
