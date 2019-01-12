@@ -42,10 +42,12 @@
 
     body.forum .listing-table .post-title a,
     textarea,
+    body.forum .postlist .entry,
+    #preview-title,
     .mainContent a,
     .pagination li a,
     .quote {
-        color: var(--bg-light);
+        color: var(--bg-light) !important;
     }
 
     table.table-striped thead th,
