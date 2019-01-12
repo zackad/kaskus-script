@@ -33,12 +33,13 @@
     #breadcrumbs-wrap,
     #sort-wrapper + div,
     #thread_post_list > div:first-child,
+    #title-message button,
     .jsNoticeBoard > div,
     .jsFirstPostItemContent div,
     .mainContent .column > div,
     .postlist,
     .user-home {
-        background-color: var(--bg-darker);
+        background-color: var(--bg-darker) !important;
     }
 
     body.forum .listing-table .post-title a,
@@ -52,6 +53,7 @@
     }
 
     #breadcrumbs-wrap a,
+    #title-message button,
     .home-breadcrumb {
         color: var(--bg-lighter) !important;
     }
