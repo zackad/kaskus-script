@@ -125,6 +125,7 @@
     */
     div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) i,
     #breadcrumbs-wrap .breadcrumbs::after,
+    .jsTooltipReputation,
     .site-footer,
     .jsMainFooter,
     .sidebar,
