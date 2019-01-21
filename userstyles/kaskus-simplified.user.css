@@ -11,6 +11,7 @@
     dark "Dark" <<<EOT
     :root {
         --fullwidth: 100%;
+        --link-color: #1998ed;
         --bg-dark: #666;
         --bg-darker: #363636;
         --bg-darkest: #181818;
@@ -104,6 +105,10 @@
     .quote,
     .site-header--bot {
         background-color: var(--bg-darkest) !important;
+    }
+
+    div[id^='post'] > div:nth-child(2) a {
+        color: var(--link-color) !important;
     }
     EOT;
 }
