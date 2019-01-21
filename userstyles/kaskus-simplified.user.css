@@ -37,6 +37,7 @@
     #title-message button,
     .jsNoticeBoard > div,
     .jsFirstPostItemContent div,
+    .jsPopoverMenu,
     .mainContent .column > div,
     .postlist,
     .user-home {
@@ -99,6 +100,7 @@
 
     table tr:nth-child(even) td,
     .jsNavHeader > div:last-child,
+    .jsPopoverMenu a:hover,
     .quote,
     .site-header--bot {
         background-color: var(--bg-darkest) !important;
