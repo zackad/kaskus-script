@@ -88,6 +88,7 @@
     #reply-messsage,
     #quick-reply .entry-head,
     #quick-reply .reply-thread,
+    #txtLen,
     .jsBreadcrumb,
     .jsMainContent,
     .jsNavHeader,
@@ -95,7 +96,8 @@
     .listing-wrapper .footer,
     .markItUpHeader,
     .site-header,
-    .site-header__wrapper--scrolled {
+    .site-header__wrapper--scrolled,
+    .smiley-tab {
         background-color: var(--bg-darker) !important;
     }
 
@@ -103,7 +105,8 @@
     .jsNavHeader > div:last-child,
     .jsPopoverMenu a:hover,
     .quote,
-    .site-header--bot {
+    .site-header--bot,
+    .smiley-tab__container {
         background-color: var(--bg-darkest) !important;
     }
 
