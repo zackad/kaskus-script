@@ -85,6 +85,7 @@
     }
 
     table tr:nth-child(odd) td,
+    #message,
     #reply-messsage,
     #quick-reply .entry-head,
     #quick-reply .reply-thread,
@@ -95,6 +96,7 @@
     .jsStickyHeader,
     .listing-wrapper .footer,
     .markItUpHeader,
+    .message-body,
     .site-header,
     .site-header__wrapper--scrolled,
     .smiley-tab {
