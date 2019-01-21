@@ -49,6 +49,7 @@
     #form-title,
     #preview-title,
     .mainContent a,
+    .mainContent a > div,
     .markItUp a,
     .pagination li a,
     .quote {
