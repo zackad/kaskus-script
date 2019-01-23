@@ -2,250 +2,226 @@
 @name           Kaskus Simplified
 @namespace      https://github.com/zackad
 @description    Darken and hide all craps from kaskus forum.
-@version        0.1.3
+@version        0.3.5
 @author         zackad <zackad.dev@gmail.com> (http://zackad.com)
+@homepageURL    https://github.com/zackad/kaskus-script
+@updateURL      https://github.com/zackad/kaskus-script/raw/master/userstyles/kaskus-simplified.user.css
 @license        MIT
-==/UserStyle== */
-@-moz-document domain("www.kaskus.co.id"),
-domain("fjb.kaskus.co.id") {
-    /**
-     * BACKGROUND COLOR UTAMA
-     */
-    body.fjb,
-    body.inner,
-    body.landing,
-    .listing-wrapper {
-        background-color: #222;
-        background-image: url(data:image/png;base64,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) !important;
+@advanced dropdown color-theme "Theme Color" {
+    default "Default" <<<EOT
+    EOT;
+    dark "Dark" <<<EOT
+    :root {
+        --fullwidth: 100%;
+        --link-color: #1998ed;
+        --color-dark: #666;
+        --color-darker: #363636;
+        --color-darkest: #181818;
+        --color-light: #ddd;
+        --color-lighter: #eee;
+        --image-pattern: url(data:image/png;base64,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) !important;
     }
 
     body {
-        color: #000;
+        background-image: var(--image-pattern);
+        color: var(--color-light);
     }
 
-    .reputation {
-        width: 110px;
+    table.table-striped thead th,
+    #selected_Sub_Menu,
+    .entry-post .meta,
+    .sub-header,
+    .table.listing thead tr th {
+        background-color: var(--color-dark) !important;
     }
 
-    .listing-wrapper {
-        padding-top: 5px;
-        background: #eee;
-    }
-
-    /**
-     * ELEMENT GK PENTING
-     */
-    body.forum.inner #main.main .container .row.ads-lb-wrap,
-    .ads-lb-wrap,
-    #bottom-leaderboard,
-    #feedback,
-    #leader-banner,
-    #thread_post_list .text-center,
-    ul#menu-right > li:first-child,
-    ul#menu-right > li:nth-child(2),
-    .kaskus-ads,
-    .related-thread,
-    body.forum .col-sm-3.sidebar,
-    .user-control-stick,
-    #lb-button-group,
-    .sidebar .banner-frame,
-    body.fjb .sidebar .sidebar-wrap > section.similar-item,
-    body.fjb .author.clearfix time,
-    .sidebar .sidebar-wrap,
-    .site-header--bot,
-    .site-footer {
-        display: none
-    }
-
-    /**
-     * HEADER
-     */
-    .site-header__wrapper--forum,
-    body header.navbar {
-        background: #343030;
-        box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.52)
-    }
-
-    #btn-whatsnew,
-    .navbar-default .navbar-nav > li > a,
-    a#help-center {
-        color: #FFF;
-    }
-
-    .site-header {
-        background: #333;
-    }
-
-    #menu-right > li > a {
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    /**
-     * FORUM DAN USER CONTROL
-     */
-    body.forum.inner #lb-button-group {
-        position: absolute!important;
-        right: 0;
-        top: 28px;
-        z-index: 1;
-        width: 150px;
-    }
-
-    body.forum .main-content {
-        margin: 0 auto;
-        float: none;
-    }
-
-    body.forum .main-content,
-    body.forum .user-control-stick {
-        width: 1024px;
-    }
-
-    .listing-wrapper {
-        margin: auto!important;
-        float: none;
-    }
-
-    .main {
-        padding-top: 55px;
-    }
-
+    div[id^='post'] > div,
+    div[id^='post'] + div,
+    div[id^='post'][itemtype] > div,
+    div[id^='thread'],
+    div[data-postid],
+    div[data-postid] div,
+    table tr:nth-child(odd) td,
     #breadcrumbs-wrap,
-    #forum-thread-top,
-    .thread-head,
+    #form-title,
+    #message,
+    #quick-reply .entry-head,
+    #quick-reply .reply-thread,
+    #reply-messsage,
+    #sort-wrapper + div,
+    #thread_post_list > div:first-child,
+    #title-message button,
+    #txtLen,
+    .jsBreadcrumb,
+    .jsMainContent,
+    .jsNavHeader,
+    .jsNoticeBoard > div,
+    .jsFirstPostItemContent div,
+    .jsPopoverMenu,
+    .jsStickyHeader,
+    .listing-wrapper .footer,
+    .mainContent .column > div,
+    .markItUpHeader,
+    .message-body,
     .postlist,
-    .thread-prevnext {
-        margin-bottom: 0;
+    .site-header,
+    .site-header__wrapper--scrolled,
+    .smiley-tab,
+    .user-home {
+        background-color: var(--color-darker) !important;
     }
 
-    .postlist__wrapper {
-        background: white;
-    }
-
-    .entry-body {
-        width: 88% !important;
-    }
-
-    /**
-     * USER CONTROL
-     */
+    body.response.forum .postlist .entry-head,
+    table tr:nth-child(even) td,
+    #forum-thread-list-top,
+    .jsNavHeader > div:last-child,
+    .jsPopoverMenu a:hover,
+    .live-posting.new,
+    .panel-wrapper.menu.active a.fold,
     .panel-wrapper.menu a.fold,
-    .panel-wrapper.menu.active a.fold {
-        background: #343434;
-        color: #eee;
+    .panel-wrapper.menu a.fold:hover,
+    .quote,
+    .site-header--bot,
+    .smiley-tab__container,
+    .user-home .user-home-content .header {
+        background-color: var(--color-darkest) !important;
     }
 
-    .panel-wrapper.menu a.fold:hover {
-        background: #000;
-        color: #eee;
+    body.forum .listing-table .post-title a,
+    body.forum .postlist .entry,
+    body.response.forum .postlist .entry-head,
+    table.table-striped thead th,
+    textarea,
+    #form-title,
+    #forum-thread-list-top,
+    #preview-title,
+    #selected_Sub_Menu,
+    .entry-post .meta,
+    .live-posting.new,
+    .mainContent a,
+    .mainContent a > div,
+    .markItUp a,
+    .pagination li a,
+    .panel-wrapper.menu a.fold,
+    .panel-wrapper.menu a.fold:hover,
+    .panel-wrapper.menu.active a.fold,
+    .quote,
+    .sub-header,
+    .table.listing thead tr th,
+    .user-home .user-home-content .header {
+        color: var(--color-light) !important;
     }
 
-    .panel-wrapper.menu a.current {
-        background: #666;
-        color: #fff;
+    #breadcrumbs-wrap a,
+    #title-message button,
+    .home-breadcrumb {
+        color: var(--color-lighter) !important;
     }
 
-    .panel-wrapper.menu a:hover {
-        background: #222;
-        color: #fff;
+    div[id^='post'] > div:nth-child(2) a {
+        color: var(--link-color) !important;
     }
-
-    .user-content-wrapper .user-tab-nav li.active a {
-        background: #666;
-    }
-
+    EOT;
+}
+==/UserStyle== */
+@-moz-document domain("www.kaskus.co.id") {
     /**
-     * VM
-     */
-    .visitor-message .deleted {
+    * Hide unimportant elements
+    */
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) i,
+    #breadcrumbs-wrap .breadcrumbs::after,
+    .jsTooltipReputation,
+    .site-footer,
+    .jsMainFooter,
+    .sidebar,
+    .widgetGeneralSpot {
         display: none;
     }
 
-    /**
-     * STYLE DI HALAMAN THREAD
-     */
-    body.response.forum .postlist .entry-head {
-        background: #242A2A;
+    .column {
+        margin: 0;
+        width: var(--fullwidth);
+    }
+
+    div[id^='post'][itemtype],
+    div[id^='thread'] {
+        margin-bottom: 3px;
+    }
+
+    div[id^='post'][itemtype] {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+
+    div[id^='post'][itemtype] > div:nth-child(1) {
+        margin-right: 1px;
+        width: calc(13% - 1px);
+    }
+
+    div[id^='post'][itemtype] > div:nth-child(1) > div {
+        flex-wrap: wrap;
+    }
+
+    div[id^='post'][itemtype] > div:nth-child(1) > div img {
+        border-radius: 0;
+        height: 95px;
+        width: 95px;
+    }
+
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) {
+        margin: 5px 0;
+    }
+
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) > div {
+        flex-wrap: wrap;
+    }
+
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) div[itemprop='name'] > *,
+    div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) div[itemprop='name'] + div > span {
+        display: block;
+        width: 100%;
+    }
+
+    div[id^='post'][itemtype] > div.Ai\(c\) {
+        display: none;
+    }
+
+    div[id^='post'][itemtype] > div:nth-child(2),
+    div[id^='post'][itemtype] > div:nth-child(3) {
+        margin-top: -1px;
+        width: 87%;
+    }
+
+    div[id^='post'][itemtype] > div:last-child,
+    div[id^='post'][itemtype] > form,
+    .main-content {
+        margin-top: 1px;
+        width: 100%;
+    }
+
+    .entry-body {
+        width: calc(100% - 120px) !important;
+    }
+
+    .jsBreadcrumb {
+        padding: 5px 15px;
+        color: #eee;
+    }
+
+    .jsMainContent > div {
+        margin: 0;
+    }
+
+    .post-reply-button {
+        margin: 10px 0;
+    }
+
+    code {
+        display: block;
     }
 
     /**
-     * USER-QUICKVIEW
-     */
-    .user-quickview {
-        z-index: 3;
-    }
-
-    /**
-     * USER TOOLS
-     */
-    body .postlist .user-tools a {
-        line-height: 28px;
-        font-weight: 700;
-        font-size: 12px;
-        display: inline-block;
-        margin-bottom: 0;
-        text-align: center;
-        vertical-align: middle;
-        cursor: pointer;
-        border: 1px solid transparent;
-        white-space: nowrap;
-        -moz-user-select: -moz-none;
-        -ms-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
-        color: #fff;
-        background: #222;
-        border-radius: 2px;
-        -moz-transition: all .1s ease-in-out;
-        -webkit-transition: all .1s ease-in-out;
-        transition: all .1s ease-in-out;
-        text-decoration: none
-    }
-
-    body .postlist .user-tools a:hover {
-        text-decoration: none;
-        background-color: #aaa!important;
-        color: #000;
-    }
-
-    body .postlist .user-tools a i {
-        border-right: solid 1px #fff;
-        float: left;
-        line-height: 28px;
-        margin-left: -10px;
-        margin-right: 10px;
-        padding: 0 10px
-    }
-
-    body .postlist .user-tools a.btn-orange {
-        background-color: #f6a049!important
-    }
-
-    /**
-     * BREADCRUMB
-     */
-    .quick-navigation {
-        margin-left: 72px;
-        width: 1024px;
-        text-transform: none;
-    }
-
-    /**
-     * QR STYLE
-     */
-    body .reply-form .entry-head {
-        background: #333;
-    }
-
-    .xkqr .reply-thread {
-        padding-top: 0;
-        padding-bottom: 2px;
-    }
-
-    .content-wrap {
-        width: 1000px;
-        float: right;
-        background: #ededed;
-        padding-top: 15px;
-    }
+    * Color scheme related part
+    */
+    /*[[color-theme]]*/
 }
