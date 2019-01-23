@@ -30,7 +30,7 @@
     .entry-post .meta,
     .sub-header,
     .table.listing thead tr th {
-        background-color: var(--color-dark);
+        background-color: var(--color-dark) !important;
     }
 
     div[id^='post'] > div,
@@ -39,35 +39,74 @@
     div[id^='thread'],
     div[data-postid],
     div[data-postid] div,
+    table tr:nth-child(odd) td,
     #breadcrumbs-wrap,
     #form-title,
+    #message,
+    #quick-reply .entry-head,
+    #quick-reply .reply-thread,
+    #reply-messsage,
     #sort-wrapper + div,
     #thread_post_list > div:first-child,
     #title-message button,
+    #txtLen,
+    .jsBreadcrumb,
+    .jsMainContent,
+    .jsNavHeader,
     .jsNoticeBoard > div,
     .jsFirstPostItemContent div,
     .jsPopoverMenu,
+    .jsStickyHeader,
+    .listing-wrapper .footer,
     .mainContent .column > div,
+    .markItUpHeader,
+    .message-body,
     .postlist,
+    .site-header,
+    .site-header__wrapper--scrolled,
+    .smiley-tab,
     .user-home {
         background-color: var(--color-darker) !important;
     }
 
+    body.response.forum .postlist .entry-head,
+    table tr:nth-child(even) td,
+    #forum-thread-list-top,
+    .jsNavHeader > div:last-child,
+    .jsPopoverMenu a:hover,
+    .live-posting.new,
+    .panel-wrapper.menu.active a.fold,
+    .panel-wrapper.menu a.fold,
+    .panel-wrapper.menu a.fold:hover,
+    .quote,
+    .site-header--bot,
+    .smiley-tab__container,
+    .user-home .user-home-content .header {
+        background-color: var(--color-darkest) !important;
+    }
+
     body.forum .listing-table .post-title a,
     body.forum .postlist .entry,
+    body.response.forum .postlist .entry-head,
     table.table-striped thead th,
     textarea,
     #form-title,
+    #forum-thread-list-top,
     #preview-title,
     #selected_Sub_Menu,
     .entry-post .meta,
+    .live-posting.new,
     .mainContent a,
     .mainContent a > div,
     .markItUp a,
     .pagination li a,
+    .panel-wrapper.menu a.fold,
+    .panel-wrapper.menu a.fold:hover,
+    .panel-wrapper.menu.active a.fold,
     .quote,
     .sub-header,
-    .table.listing thead tr th {
+    .table.listing thead tr th,
+    .user-home .user-home-content .header {
         color: var(--color-light) !important;
     }
 
@@ -77,45 +116,6 @@
         color: var(--color-lighter) !important;
     }
 
-    body.response.forum .postlist .entry-head,
-    #forum-thread-list-top,
-    .user-home .user-home-content .header,
-    .live-posting.new,
-    .panel-wrapper.menu a.fold,
-    .panel-wrapper.menu a.fold:hover,
-    .panel-wrapper.menu.active a.fold {
-        background-color: var(--color-darkest);
-        color: var(--color-light);
-    }
-
-    table tr:nth-child(odd) td,
-    #message,
-    #reply-messsage,
-    #quick-reply .entry-head,
-    #quick-reply .reply-thread,
-    #txtLen,
-    .jsBreadcrumb,
-    .jsMainContent,
-    .jsNavHeader,
-    .jsStickyHeader,
-    .listing-wrapper .footer,
-    .markItUpHeader,
-    .message-body,
-    .site-header,
-    .site-header__wrapper--scrolled,
-    .smiley-tab {
-        background-color: var(--color-darker) !important;
-    }
-
-    table tr:nth-child(even) td,
-    .jsNavHeader > div:last-child,
-    .jsPopoverMenu a:hover,
-    .quote,
-    .site-header--bot,
-    .smiley-tab__container {
-        background-color: var(--color-darkest) !important;
-    }
-
     div[id^='post'] > div:nth-child(2) a {
         color: var(--link-color) !important;
     }
@@ -123,7 +123,6 @@
 }
 ==/UserStyle== */
 @-moz-document domain("www.kaskus.co.id") {
-
     /**
     * Hide unimportant elements
     */
