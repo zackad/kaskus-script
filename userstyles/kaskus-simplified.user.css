@@ -4,6 +4,8 @@
 @description    Darken and hide all craps from kaskus forum.
 @version        0.3.5
 @author         zackad <zackad.dev@gmail.com> (http://zackad.com)
+@homepageURL    https://github.com/zackad/kaskus-script
+@updateURL      https://github.com/zackad/kaskus-script/raw/master/userstyles/kaskus-simplified.user.css
 @license        MIT
 @advanced dropdown color-theme "Theme Color" {
     default "Default" <<<EOT
