@@ -25,6 +25,14 @@
         color: var(--color-light);
     }
 
+    table.table-striped thead th,
+    #selected_Sub_Menu,
+    .entry-post .meta,
+    .sub-header,
+    .table.listing thead tr th {
+        background-color: var(--color-dark);
+    }
+
     div[id^='post'] > div,
     div[id^='post'] + div,
     div[id^='post'][itemtype] > div,
@@ -46,15 +54,20 @@
     }
 
     body.forum .listing-table .post-title a,
-    textarea,
     body.forum .postlist .entry,
+    table.table-striped thead th,
+    textarea,
     #form-title,
     #preview-title,
+    #selected_Sub_Menu,
+    .entry-post .meta,
     .mainContent a,
     .mainContent a > div,
     .markItUp a,
     .pagination li a,
-    .quote {
+    .quote,
+    .sub-header,
+    .table.listing thead tr th {
         color: var(--color-light) !important;
     }
 
@@ -62,15 +75,6 @@
     #title-message button,
     .home-breadcrumb {
         color: var(--color-lighter) !important;
-    }
-
-    table.table-striped thead th,
-    #selected_Sub_Menu,
-    .entry-post .meta,
-    .sub-header,
-    .table.listing thead tr th {
-        background-color: var(--color-dark);
-        color: var(--color-light);
     }
 
     body.response.forum .postlist .entry-head,
