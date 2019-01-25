@@ -58,7 +58,6 @@
     .jsNoticeBoard > div,
     .jsFirstPostItemContent div,
     .jsPopoverMenu,
-    .jsStickyHeader,
     .listing-wrapper .footer,
     .mainContent .column > div,
     .markItUpHeader,
@@ -76,6 +75,7 @@
     #forum-thread-list-top,
     .jsNavHeader > div:last-child,
     .jsPopoverMenu a:hover,
+    .jsStickyHeader,
     .live-posting.new,
     .panel-wrapper.menu.active a.fold,
     .panel-wrapper.menu a.fold,
@@ -129,6 +129,10 @@
 
     div[id^='post'] > div:last-child {
         border-top: 1px solid var(--color-dark);
+    }
+
+    .jsStickyHeader {
+        border-bottom: 1px solid var(--color-light);
     }
     EOT;
 }
