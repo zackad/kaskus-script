@@ -121,6 +121,14 @@
     div[id^='post'] > div:nth-child(2) a {
         color: var(--link-color) !important;
     }
+
+    div[id^='post'] > div:first-child {
+        border-right: 1px solid var(--color-dark);
+    }
+
+    div[id^='post'] > div:last-child {
+        border-top: 1px solid var(--color-dark);
+    }
     EOT;
 }
 ==/UserStyle== */
