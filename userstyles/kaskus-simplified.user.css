@@ -90,6 +90,7 @@
     body.forum .listing-table .post-title a,
     body.forum .postlist .entry,
     body.response.forum .postlist .entry-head,
+    div[id^='comment-nested-'] .C\(\#3f3f3f\),
     table.table-striped thead th,
     textarea,
     #form-title,
