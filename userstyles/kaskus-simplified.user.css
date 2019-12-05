@@ -12,6 +12,7 @@
   EOT;
   dark "Dark" <<<EOT
     :root {
+      --c-white: #363636;
       --fullwidth: 100%;
       --link-color: #1998ed;
       --color-dark: #666;
