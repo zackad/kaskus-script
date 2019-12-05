@@ -204,6 +204,7 @@
   div[id^='post'][itemtype] > div:nth-child(3) {
     margin-top: -1px;
     width: 87%;
+    padding-left: 0.5rem;
   }
 
   div[id^='post'][itemtype] > div:last-child,
