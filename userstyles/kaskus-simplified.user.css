@@ -147,6 +147,7 @@
   div[id^='post'][itemtype] > div:nth-child(1) > div > div:nth-child(2) i,
   #breadcrumbs-wrap .breadcrumbs::after,
   #threadlist_visualita div[id^='thread'] .W\(90px\),
+  .Py\(10px\).Px\(15px\).Bgc\(c-white\).Pos\(r\).Ov\(h\).Mb\(15px\).Bd\(borderSolidLightGrey\),
   .jsTooltipReputation,
   .site-footer,
   .jsMainFooter,
